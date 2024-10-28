@@ -1,0 +1,867 @@
+/*Layout*/
+.mainDetail {
+	margin: 5px 0;
+	padding: 0 40px;
+}
+
+.mainLeft {
+	float: left;
+	margin: 0;
+	margin-right: 5px;
+	padding: 0;
+	width: 20%;
+}
+
+.mainRight {
+	float: left;
+	margin: 0 0 0 8px;
+	padding: 0;
+	width: 79%;
+}
+
+.mainDetail:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.solar-info, .ess-info {
+	margin-bottom: 5%;
+	height: 22%;
+}
+
+.power-system {
+	float: left;
+	margin: 0;
+	margin-right: 1%;
+	width: 77%;
+	height: 51%;
+	background: url(../img/main/power-system/power-system-background.png)
+	no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.run-result {
+	float: right;
+	margin: 0;
+	width: 22%;
+	height: 51%;
+	background: url(../img/main/run-result/run-result-background.png)
+	no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.mainRightTop {
+	margin: 0;
+	margin-bottom: 1%;
+	padding: 0;
+}
+
+.mainRightTop:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.realtime-trend {
+	margin: 0;
+	width: 100%;
+	height: 45.7%;
+}
+
+.subLeft {
+	float: left;
+}
+
+.subRight {
+	float: right;
+}
+
+.main-box-title-container {
+	height: 34px;
+}
+
+.main-box-title {
+	color: #ffffff;
+	opacity: 0.5;
+	font-size: 19px;
+	font-weight: bold;
+	padding: 7px 12px;
+}
+
+#RunResultDT2 {
+	float: right;
+}
+
+.unit {
+	color: #ffffff;
+	opacity: 0.4;
+	font-size: 15px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/*Main Left*/
+
+/* solar  */
+.solar-info {
+	position: relative;
+	background: url(../img/main/solar-info/solor-info-background.png)
+		no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.solar-info-content-container {
+	height: 111px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 18px 20px;
+}
+
+.solar-info-img-container {
+	width: 100px;
+	height: 80px;
+	margin: 10px 25px;
+}
+
+.solar-info-content-detail-conatiner {
+	margin: 8px 0 0 14px;
+	height: 66px;
+	line-height: 37px;
+}
+
+.solar-info-value {
+	color: #fabc1e;
+	font-size: 2.6em;
+}
+
+.solar-info-unit {
+	color: #ffffff;
+	opacity: 0.5;
+}
+
+.solar-info-subtitle {
+	color: #ffffff;
+	font-size: 17px;
+}
+
+/* ess */
+.ess-info {
+	position: relative;
+	background: url(../img/main/solar-info/solor-info-background.png)
+		no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.ess-info-content-container {
+	height: 111px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 18px 20px;
+}
+
+.ess-info-img-container {
+	width: 100px;
+	height: 62px;
+	margin: 20px 25px;
+}
+
+.ess-info-content-detail-conatiner {
+	margin: 8px 0 0 14px;
+	height: 66px;
+	line-height: 37px;
+}
+
+
+.ess-info-value {
+	color: #55e0ae;
+	font-size: 3em;
+}
+
+.ess-info-value2 {
+	color: #55e0ae;
+	font-size: 18px;
+}
+
+.ess-info-unit {
+	color: #ffffff;
+	opacity: 0.5;
+}
+
+.ess-info-subtitle {
+	color: #ffffff;
+	font-size: 17px;
+}
+
+/*Run info*/
+.run-info {
+	position: relative;
+	background: url(../img/main/run-info/run-info-background.png) no-repeat
+		left top;
+	background-size: 100% 100%;
+	height: 50%;
+}
+
+.run-info-content-container {
+	margin-top: 12px;
+	padding: 10px 22px;
+}
+
+.run-info-content-container ul {
+	list-style: none;
+	margin: 12px auto;
+	padding: 12px 7px;
+	line-height: 1.8;
+}
+
+.run-info-content-container li p {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.run-info-content-title {
+	opacity: 0.6;
+}
+
+.run-info-content-unit {
+	opacity: 0.6;
+	padding: 0 !important;
+	background: none !important;
+}
+
+/* Power System */
+.power-system-content-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	height: 394px;
+}
+
+.power-system-content-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 197px;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+tspan {
+	color: #ffffff;
+}
+
+.power-system-image-name-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	z-index: 5;
+	background-color: #262c31;
+}
+
+.power-system-name-tag {
+	margin-top: 9px;
+	color: #ffffff;
+	width: 80px;
+	height: 25px;
+	opacity: 0.6;
+	text-align: center;
+	font-size: 14px;
+	background: url(../img/main/power-system/name-tag.png) no-repeat left
+		top;
+	background-size: 100% 100%;
+}
+
+#kepco {
+	position: absolute;
+	top: 148px;
+	left: 519px;
+}
+
+#solar-panel {
+	position: absolute;
+	top: 148px;
+	left: 832px;
+}
+
+#battery {
+	position: absolute;
+	top: 148px;
+	left: 1329px;
+	height: 180px;
+}
+
+#PCS {
+	left: 1080px;
+	top: 320px;
+	position: absolute;
+}
+
+#line1 {
+	position: absolute;
+	top: 206px;
+	left: 642px;
+	width: 189px;
+	height: 6px;
+}
+
+#line1-value {
+	position: absolute;
+	color: #fabc1e;
+	font-size: 18px;
+	top: 172px;
+	left: 724px;
+}
+
+#line2 {
+	position: absolute;
+	top: 206px;
+	left: 956px;
+	width: 175px;
+}
+
+#line2-value {
+	position: absolute;
+	color: #fabc1e;
+	font-size: 18px;
+	top: 172px;
+	left: 1000px;
+}
+
+#line3 {
+	position: absolute;
+	top: 206px;
+	left: 1154px;
+	width: 175px;
+}
+
+#line3-value {
+	position: absolute;
+	color: #55e0ae;
+	font-size: 18px;
+	top: 172px;
+	left: 1222px;
+}
+
+#line4 {
+	position: absolute;
+	top: 215px;
+	left: 1183px;
+}
+
+#line4-value {
+	position: absolute;
+	color: #f44063;
+	font-size: 18px;
+	/* off */
+	top: 358px;
+	left: 610px;
+}
+
+#line5 {
+	position: absolute;
+	/* off */
+	left: 581px;
+	top: 154px;
+}
+
+#line5-value .RunResultR_PCSPower {
+	position: absolute;
+	color: #ffffff;
+	font-size: 18px;
+	top: 700px;
+	left: 1250px;
+}
+
+#RunResultR_PCSPower {
+	color: #f44063;
+	font-size: 18px;
+}
+
+
+.subLTW:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.subRight {
+	width: 148px;
+}
+
+.run-info-content-number {
+	width: 115px;
+	float: left;
+}
+
+#kw {
+	width: 99px;
+	float: left;
+}
+
+.subLTW span {
+	margin: 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.run-info-content-unit {
+	float: right;
+}
+
+#run-info-FirstImg {
+	text-align: center;
+	color: black;
+	background: url(../img/main/run-info/auto-mode.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+#run-info-SecondImg {
+	text-align: center;
+	color: black;
+	background: url(../img/main/run-info/charging.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+/*Main Right*/
+
+.realtime-trend {
+	background:
+		url(../img/main/realtime-trend/realtime-trend-background.png)
+		no-repeat left top;
+	background-size: 100% 100%;
+}
+
+/*Main Right One*/
+/*Layout*/
+.rigtOneFirstWrapper:after, .rigtOneSecondWrapper:after,
+	.rigtOneSecondSubWrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Run Result */
+#rightTwoTopWrapper {
+	
+}
+
+.rigtTwoWrapper {
+	font-size: 14px;
+	color: #fff;
+	padding: 0 22px;
+}
+
+.rigtTwoWrapper ul {
+	background: url(../img/main/run-result/box.png) no-repeat left top;
+	background-size: 100% 100%;
+	list-style: none;
+	margin: 3px auto;
+	padding: 8px 12px;
+}
+
+.run-result-subtitle {
+	color: #ffffff;
+	opacity: 0.6;
+	font-size: 17px;
+}
+
+.run-result-value {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+	color: #fabc1e;
+}
+
+.subRTW {
+	font-size: 15px;
+	color: #D5D5D5;
+}
+
+.subRTW:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#subRight1, #subRight2, #subRight3, #subRight4, #subRight5, #subRight6 {
+	padding-left: 0px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.dataLine {
+	margin: 8px 0;
+	padding: 0;
+	border: 1px solid #222222;
+}
+
+.subRTW span {
+	margin: 0;
+	padding: 0 10px;
+	font-size: 17px;
+	font-weight: bold;
+	background-size: 100% 100%;
+}
+
+/* Realtime trend */
+.realtime-trend-content-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 25px;
+	width: 97%;
+	height: 280px;
+	transform: translateX(-20px);
+}
+
+.realtime-trend-content-AxisX {
+	color: white;
+	writing-mode: vertical-rl;
+	display: inline-block;
+	transform: translateY(-108px);
+	margin-left: 10px;
+	opacity: 0.8;
+}
+
+.realtime-trend-content-AxisY {
+	color: white;
+	transform: translateY(-25px);
+	margin-left: 49%;
+	opacity: 0.8;
+}
+
+#FigureC {
+	color: #ffffff;
+}
+
+@media only screen and ( max-width: 380px )
+{
+	
+	body {
+		overflow: scroll;
+	}
+	
+	.mainDetail{
+		padding: 0 20px;
+	}
+	
+	.mainLeft, .mainRight {
+		width: 100%;
+	}
+	
+	.run-info {
+		margin: 12px 0px;
+	}
+	
+	.solar-info-subtitle, .ess-info-subtitle {
+		font-size: 15px;
+	}
+	
+	
+	
+	/* Right side */ 
+	
+	.mainRight {
+		margin-right: 5px;
+		margin-left: 0px;
+	}
+	
+	.power-system {
+		width: 100%;
+		margin-bottom: 12px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	.run-result {
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	
+	#kepco, #solar-panel, #battery, #PCS, #line1, #line2, #line3, #line4, #line5, #line1-value, #line2-value, #line3-value, #line4-value {
+		position: relative;
+		transform: scale(0.8);
+	}
+	
+	.line-value {
+		width: 82.25px;
+	}
+	
+	
+	#kepco {
+		top: 0px;
+		left: 150px;
+	}
+	
+	#solar-panel {
+		top: 0px;
+    	left: 160px;
+	}
+	
+	#pcs {
+		top: 20px;
+    	left: 204px;
+	}
+	
+	#battery {
+		top: 8px;
+		left: 218px;
+	}
+	
+	#line1 {
+		top: -290px;
+   		left: 70px;
+	}
+	
+	#line2 {
+		top: -320px;
+		left: 268px;
+	}
+	
+	#line3 {
+	    top: -525px;
+   		left: 422px;
+	}
+	
+	#line4{
+		top: -676px;
+   		left: 337px;
+	}
+	
+	#line5 {
+   		top: -943px;
+		left: 65px;
+    	transform: scale(1);
+	}
+	
+	#line1-value {
+		top: -40px;
+    	left: 160px;
+	}
+	
+	#line2-value {
+		top: -40px;
+    	left: 148px;
+	}
+	
+	#line3-value {
+		top: -40px;
+    	left: 211px;
+	}
+	
+	#line4-value {
+		top: -20px;
+   		left: 50;
+	}
+	
+	
+	/* chart */
+	.realtime-trend-content-AxisX {
+		position: relative;
+   		top: 200px;
+	}
+	
+	.realtime-trend-content-AxisY {
+		position: relative;
+    	top: -81px;
+	}
+	
+	.realtime-trend-content-container {
+		top: -127px;
+		left: 8px;
+   		display: inline-block;
+    	position: relative;
+    	width: 1200px;
+	}
+	
+	.realtime-trend {
+		height: 421.297;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	tspan {
+	    font-size: 15px;
+	}
+
+}
+
+
+@media only screen and ( min-width: 380px ) and ( max-width: 420px )
+{
+	body {
+		overflow: scroll;
+	}
+	
+	.mainDetail{
+		padding: 0 20px;
+	}
+	
+	.mainLeft, .mainRight {
+		width: 100%;
+	}
+	
+	.run-info {
+		margin: 12px 0px;
+	}
+	
+	.solar-info-subtitle, .ess-info-subtitle {
+		font-size: 15px;
+	}
+	
+	
+	
+	/* Right side */ 
+	
+	.mainRight {
+		margin-right: 5px;
+	}
+	
+	.power-system {
+		width: 100%;
+		margin-bottom: 12px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	.run-result {
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	
+	#kepco, #solar-panel, #battery, #PCS, #line1, #line2, #line3, #line4, #line5, #line1-value, #line2-value, #line3-value, #line4-value {
+		position: relative;
+		transform: scale(0.8);
+	}
+	
+	.line-value {
+		width: 82.25px;
+	}
+	
+	
+	#kepco {
+		top: 0px;
+		left: 150px;
+	}
+	
+	#solar-panel {
+		top: 0px;
+    	left: 160px;
+	}
+	
+	#pcs {
+		top: 20px;
+    	left: 159px;
+	}
+	
+	#battery {
+		top: 8px;
+		left: 188px;
+	}
+	
+	#line1 {
+		top: -290px;
+   		left: 70px;
+	}
+	
+	#line2 {
+		top: -320px;
+		left: 268px;
+	}
+	
+	#line3 {
+	    top: -525px;
+   		left: 416px;
+	}
+	
+	#line4{
+		top: -676px;
+    	left: 285px;
+	}
+	
+	#line5 {
+   		top: -943px;
+		left: 94px;
+    	transform: scale(1);
+	}
+	
+	#line1-value {
+		top: -40px;
+    	left: 160px;
+	}
+	
+	#line2-value {
+		top: -40px;
+    	left: 148px;
+	}
+	
+	#line3-value {
+		top: -40px;
+    	left: 211px;
+	}
+	
+	#line4-value {
+		top: -20px;
+   		left: 50;
+	}
+	
+	
+	/* chart */
+	.realtime-trend-content-AxisX {
+		position: relative;
+   		top: 200px;
+	}
+	
+	.realtime-trend-content-AxisY {
+		position: relative;
+    	top: -81px;
+	}
+	
+	.realtime-trend-content-container {
+		top: -127px;
+		left: 8px;
+   		display: inline-block;
+    	position: relative;
+    	width: 1200px;
+	}
+	
+	.realtime-trend {
+		height: 421.297px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	
+	tspan {
+	    font-size: 15px;
+	}
+	
+
+}

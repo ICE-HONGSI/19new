@@ -1,0 +1,13 @@
+=\=\=\=\=\=\=
+<<<<<<<=Updated upstream
+>>>>>>>=Stashed changes
+eclipse.preferences.version=1
+encoding//src/main/java/com/ubinetsys/pms/login/LoginController.java=UTF-8
+encoding//src/main/java/com/ubinetsys/pms/main/MainController.java=UTF-8
+encoding//src/main/java/com/ubinetsys/pms/oper_bms/BmsController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/control_operationSetting.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/control_run.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/inc/top.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/oper_bmsTray_ajax.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/oper_event_ajax.jsp=UTF-8
+encoding/<project>=UTF-8

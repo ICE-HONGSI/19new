@@ -1,0 +1,351 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	font-family: "Noto Sans KR", sans-serif !important;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+/*Color for All*/
+.red {
+	color: #ff5778;
+}
+
+.green {
+	color: #fabc12;
+}
+
+.yellow {
+	color: #55e0ae;
+}
+
+.blue {
+	color: #3bacff;
+}
+
+/*Total Frame height*/
+.backGround {
+	height: 1060px
+}
+
+.topMenu {
+	height: 60px;
+}
+
+.bottomWrapper {
+	height: 30px;
+}
+
+.bodyWrapper {
+	height: 830px;
+}
+
+/*top*/
+.backGround {
+	width: 1920px;
+	margin: 0;
+	background: #1d2126;
+}
+
+.topMenu {
+	margin: 20px 40px 10px 40px;
+}
+
+.logo .logo_image {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+}
+
+.logo .logo_image img {
+	width: 100%;
+	height: 60px;
+}
+
+.logo .logo_name {
+	float: left;
+	width: 180px;
+	margin-top: 15px;
+	border-right: solid 1px #ffffff;
+}
+
+.logo .logo_weather {
+	float: left;
+	margin-left: 10px;
+	padding-top: 10px;
+	width: 200px;
+	height: 60px;
+}
+
+.logo .logo_weather img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 33px;
+	height: 33px;
+}
+
+.logo .logo_weather span {
+	float: left;
+	margin-left: 5px;
+	height: 20px;
+}
+
+.logo .logo_weather .weather_name {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.weather_name {
+	margin-top: -3px;
+}
+
+#compName {
+	color: #ffffff;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.menu {
+	float: right;
+	width: 920px;
+}
+
+.topMenu:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*menu*/
+.menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu ul li {
+	float: right;
+	list-style: none;
+	margin: 0;
+	margin-left: 5px;
+	width: 75px;
+	text-align: center;
+	font-size: 21px;
+	line-height: 60px;
+	color: white;
+}
+
+.menu ul li a {
+	text-decoration: none;
+}
+
+.selected a {
+	color: #50d0a3;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-bottom: 2.5px #50d0a3 solid;
+}
+
+.unselected a {
+	color: #ffffff;
+	opacity: 0.7;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*bottom*/
+.bottomWrapper {
+	margin: 0 40px;
+}
+
+.bottomLeft {
+	float: left;
+	width: 920px
+}
+
+.bottomLeft .bottom_logo {
+	margin-top: 30px;
+	float: left;
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+
+.bottomLeft .bottom_logo img {
+	width: 40px;
+	height: 30px;
+	margin-top: -20px;
+}
+
+.bottomLeft .bottom_logo_name {
+	margin-top: 30px;
+	float: left;
+	height: 30px;
+}
+
+.bottomLeft .bottom_logo_name span {
+	float: left;
+	width: 200px;
+	height: 30px;
+	margin-top: -20px;
+	margin-left: 10px;
+	color: #ffffff;
+}
+
+.bottomRight {
+	float: right;
+	width: 920px
+}
+
+.bottomRight .bottom_button {
+	float: right;
+	height: 30px;
+}
+
+.bottomRight .bottom_date {
+	float: right;
+	width: 250px;
+	height: 30px;
+}
+
+.bottomRight .bottom_date .date {
+	opacity: 0.6;
+}
+
+.bottomRight .bottom_date .time {
+	margin-left: 10px;
+}
+
+.bottomWrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#logout {
+	margin-top: 30px;
+	width: 130px;
+	border: none;
+	background: url(../img/top/new_logout.png) no-repeat left top;
+	background-size: 100% 140%;
+	cursor: pointer;
+	border-radius: 10px;
+	width: 130px;
+	height: 30px;
+}
+
+#logout:hover {
+	border: 1.5px inset #ccc
+}
+
+#daydate {
+	margin-top: 30px;
+	margin-right: 15px;
+	text-align: right;
+	font-size: 18px;
+	color: white;
+	margin-right: 15px;
+}
+
+#centerAddr {
+	font-size: 5px;
+	color: #ffffff;
+	opacity: 0.8;
+}
+
+.map_wrap {
+	display: inline-block;
+	float: left;
+}
+
+.bottomRight {
+	margin-top: -20px;
+}
+
+#control, #oper {
+	margin-left: -10px;
+}
+
+@media only screen and ( max-width: 420px ) {
+	body {
+		margin-left: 5%;
+	}
+	
+	/* top */
+	.logo {
+		margin: 10 10 0 10;
+	}
+	
+	.logo_weather {
+		display: none;
+	}
+	
+	.compName {
+		width : 20%;
+	}
+	
+	.topMenu {
+		width : 100%;
+		margin: 0 0 0 0;
+	}
+	
+	.logo .logo_image {
+		width: 50%;
+		height : auto;
+		margin-right: 0;
+	}
+	
+	.logo .logo_image img {
+	    width: 100%;
+	    height : auto;
+	}
+	
+	.logo .logo_name {
+		text-align : right;
+		border-right: none;
+		margin: 10px 0px 0px 20px;
+		width: 40%;
+	}
+	
+	#compName {
+		font-size: 15px; 
+		width: auto;
+	}
+	
+	/* menu */
+	.menu {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.menu ul li {
+		width: 20%;
+	}
+	
+	/* bottom */
+	.bottomRight {
+    float: right;
+    width: 100px;
+	}
+	.bottomLeft {
+	    float: left;
+	    width: 164px;
+	}
+	
+	.bottomLeft .bottom_logo_name span {
+		width: 100px;
+	}
+	
+	.bottomRight .bottom_date .date {
+		display: none;
+	}
+	
+	#logout {
+   		transform: scale(0.8);
+   		margin-right: -40px;
+	}
+	
+}

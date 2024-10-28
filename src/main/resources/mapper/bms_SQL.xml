@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bmsSql">
+	<select id="selectBms" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[		
+	    select * from  tbl_bmsrack_curr
+  			where (rno, dt) in (
+     	select rno, max(dt)
+     		from tbl_bmsrack_curr
+      	where Gno= #{gno}  and rno > 0
+      		group by rno
+     		order by 1) order by rno 
+		]]>
+	</select>
+
+	<select id="selectTray" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[		
+			select * from
+           		tbl_bmstray_curr
+        	where Gno= #{gno} and Rno= #{Rno}
+        		order by DT desc
+        		limit 15;
+		]]>
+	</select>
+</mapper>

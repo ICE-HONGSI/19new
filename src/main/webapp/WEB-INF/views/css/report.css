@@ -1,0 +1,519 @@
+/*Layout*/
+.reportDetail {
+   margin: 5px 40px;
+   padding: 0;
+}
+
+.reportSubWrapper {
+   margin: 0 auto;
+   margin-bottom: 20px;
+   text-align: center;
+   width: 1650px;
+   height: 820px; 
+   background: url(../img/report/board.png) no-repeat left top;
+   background-size: 100% 100%;
+}
+
+.reportSubWrapper .reportTitle {
+   width: 1650px;
+   height: 45px;
+}
+
+.reportSubWrapper .reportTitle span {
+   font-size: 20px;
+   font-weight: bold;
+   opacity: 0.8;
+   line-height: 45px;
+   color: #ffffff;
+}
+
+#calendar {
+   width: 1395px;
+   height: 720px;
+   margin: 20px auto 35px auto;
+}
+
+#calendar ul {
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   width: 1500px;
+}
+
+#calendar li {
+   float: left;
+   width: 200px;
+   margin-right: -1px;
+   margin-bottom: -1px;
+   padding: 5px;
+   box-sizing: border-box;
+   border: 1.5px solid #272C32;
+}
+
+#calendar li a {
+   text-decoration: none;
+}
+
+/*#calendar ul.weekdays {height: 40px;}
+
+#calendar ul.weekdays li {
+  border: none !important;
+  padding: 10px 6px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;}*/
+
+/*Calender Top*/
+#calendar .calendarTop li {
+   border: none !important;
+   height: 100px;
+   padding: 20px 5px 0 5px;
+   font-size: 16px;
+   line-height: 20px;
+   color: #fff;
+   text-decoration: none;
+   z-index: 1;
+}
+
+#calendar .calendarTop li p {
+   height: 30px;
+   margin: 5px;
+   padding-left: 20px;
+   line-height: 30px;
+   font-size: 20px;
+   text-align: left;
+   opacity: 0.9;
+   color: #ffffff;
+}
+
+#calendar .calendarTop li .data {
+   margin: 0 10px;
+   position: relative;
+   font-size: 15px;
+   background: url(../img/report/value.png) no-repeat left top;
+}
+
+#calendar .calendarTop li .value {
+   position: absolute;
+}
+
+#calendar .calendarTop #monthChange {
+   padding-top: 5px;
+   text-align: center;
+}
+
+#calendar .calendarTop #monthChange p {
+   text-align: center;
+   margin: 0;
+   opacity: 1;
+   padding: 0;
+}
+
+#calendar .calendarTop #monthChange a {
+   font-size: 30px;
+   color: #e6e6e6;
+   text-decoration: none;
+}
+
+#calendar .calendarTop #monthChange #largeMonth {
+   margin: 0 20px;
+   font-size: 50px;
+   line-height: 50px;
+}
+
+#calendar .blue {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+/*Calender Days*/
+#calendar .days .day {
+   background: #31363C;
+   height: 126px;
+   position: relative;
+   overflow: visibie;
+}
+
+#calendar .days .day4 {
+   background: #31363C;
+   height: 157px;
+}
+
+#calendar .days .day4 .dayData {
+   padding-top: 55px;
+   padding-bottom: 5px;
+}
+
+#calendar .days .day6 {
+   background: #31363C;
+   height: 105px;
+   position: relative;
+   overflow: visibie;
+}
+
+#calendar .days .day6 .dayData {
+   padding-top: 15px !important;
+   padding-bottom: 5px !important;
+}
+
+#calendar .date {
+   padding: 1px 4px;
+   float: left;
+   font-size: 20px;
+   width: 20px;
+   color: #fff;
+   text-align: left;
+}
+
+#calendar .dayData {
+   float: left;
+   width: 147px;
+   margin: 0;
+   padding: 25px 5px 25px 5px;
+   font-size: 12px;
+   line-height: 15px;
+   color: #e6e6e6;
+   text-decoration: none;
+}
+
+#calendar .dayData p {
+   font-size: 14px;
+   margin: 0 0 4px 0;
+}
+
+#calendar .dayData p .value {
+   font-size: 13px;
+   position: absolute;
+   margin-left: 5px;
+}
+
+#calendar .dayDataWrapper:after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+#calendar .dayDataLeft {
+   float: left;
+   text-align: left;
+   width: 72px;
+}
+
+#calendar .dayDataRight {
+   float: right;
+   width: 72px;
+   text-align: left;
+}
+
+.profitParent {
+   position: relative;
+}
+
+.profitChild {
+   position: absolute;
+   top: 90%;
+   left: 50%;
+   width: 150px;
+   height: 110px;
+   color: #ffffff;
+   background-color: #464c54;
+   display: none;
+   z-index: 200;
+   font-size: 15px;
+   padding: 5px 0px 0px 5px;
+   border: 3px solid #6a6e74;
+}
+
+.white {
+   font-weight: bold;
+   color: white;
+}
+
+.profitLeft {
+   float: left;
+   text-align: left;
+   width: 100%;
+   padding: 5px 10px 0px 5px;
+}
+
+.profitValue {
+   color: #55e0ae;
+   float: right;
+   margin-right: 20px;
+}
+
+.won {
+   color: white;
+   margin: 0px;
+   padding-left: 5px;
+}
+
+.totProfit {
+   float: left;
+   text-align: left;
+   height: 30px;
+   width: 100%;
+   margin-bottom: 5px;
+   line-height: 30px;
+   font-size: 20px;
+   opacity: 0.9;
+   color: #ffffff;
+}
+
+.totProValue {
+   float: left;
+   padding-left: 0px;
+   margin-right: 5px;
+   font-size: 30px;
+   color: #55e0ae;
+}
+
+.totWon {
+   padding-top: 2px;
+   float: left;
+   font-size: 20px;
+   color: #ffffff;
+   opacity: 0.8;
+}
+
+.buttonDiv {
+   width: 300px;
+   margin: 0px 0 0 -110px;
+}
+
+.figureDiv {
+   width: 800px;
+   margin: 9px 0px 0px -470px;
+   display:block;
+}
+
+.figureDiv span {
+   font-size: 17.5px;
+   color: #ffffff;
+   opacity: 0.8;
+}
+
+.figValue {
+   color: #55e0ae !important;
+   margin: 0px 5px 0px 5px;
+}
+
+.bar {
+   opacity: 0.5 !important;
+}
+
+input.excelButton {
+   background: url("../img/report/new_excel.png") no-repeat;
+   border: none;
+   width: 136px;
+   height: 40px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+input.profitButton {
+   float: right;
+   background: url("../img/report/new_cal.png") no-repeat;
+   border: none;
+   width: 136px;
+   height: 40px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.excelButton:hover, .profitButton:hover {
+   border: 1.5px inset #ccc
+}
+
+.detailPopup {
+   width: 100%;
+   height: 100%;
+   display: none;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background: rgba(0, 0, 0, 0.85);
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+.profitPopup {
+   transform: translate(-50%, -50%);
+   width: 650px;
+   height: 350px;
+   position: absolute;
+   top: 48%;
+   left: 50%;
+   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+   border-radius: 3px;
+   background: url(../img/report/cal_background2.png) no-repeat left top;
+   background-size: 100% 100%;
+   color: #ffffff;
+   font-size: 18px;
+   text-align: center;
+   fadeOut
+}
+
+.profitDiv {
+   vertical-align: middle;
+   margin-top: 15px;
+}
+
+.popuptext {
+   height: 32px;
+   text-align: right;
+   background-color: #40454c;
+   opacity: 0.5;
+   border: none;
+   width: 300px;
+   text-align: right;
+   padding-right: 10px;
+   font-size: 20px;
+}
+
+.popupUnit {
+   margin-left: 20px;
+}
+
+.popupInput {
+   float: left;
+   text-align: center;
+   margin-left: 50;
+}
+
+.popupSubmit {
+   width: 121px;
+   height: 38px;
+   font-size: 20px;
+   border-radius: 5px;
+   margin-right: 15px;
+   margin-top: 30px;
+   background-image: url(../img/report/save2.png);
+   border: none;
+   cursor: pointer;
+}
+
+.popupSubmit:hover {
+   border: 1.5px solid #ccc
+}
+
+.closeDetailInfo {
+   width: 35px;
+   height: 35px;
+   display: inline-block;
+   position: absolute;
+   top: -25px;
+   right: -10px;
+}
+
+#boxList {
+   width: 400px;
+}
+
+@media (max-width:420px){
+   #calendar .calendarTop{
+      width:1400px;
+      height:105px;
+   }
+   #calendar .calendarTop li{
+      font-size:12px;
+   }
+   
+   #calendar li{
+      width:200px;
+   }
+   
+   #calendar .calendarTop #monthChange{
+      padding-top:15px;
+      text-align:center;
+      padding-right:120px;
+      position:fixed;
+   }
+   
+   #calendar .calendarTop #monthChange #largeMonth{
+      margin:0 10px;
+      font-size:30px;
+      line-height:35px;
+   }
+   
+   .reportSubWrapper .reportTitle{
+      width:100%;
+   }
+   
+   .reportDetail{
+      width:95%;
+      margin:5px 10px;
+   }
+   
+   .reportSubWrapper{
+      width:95%;
+      overflow:hidden;
+   }
+   
+   #calendar{
+      width:93%;
+      overflow:scroll;
+      -ms-overflow-style: none;
+   }
+   
+   
+   ::-webkit-scrollbar {
+      display:none;
+   }
+   
+   
+   #monthTotal{
+      margin-left:100px;
+      width:150px !important;
+      position:fixed;
+      z-index:1;
+   }
+   
+   .totProfit{
+      margin-top:15px;
+      font-size:14px;
+      height:17px;
+   }
+   
+   .totProValue{
+      font-size:16px;   
+   }
+   
+   .totWon{
+      font-size:16px;
+   }
+   
+   .figureDiv {
+      display:none;
+   }
+   
+   .buttonDiv {
+   width: 100px;
+   margin-left:-560px;
+   position:fixed;
+   }
+   
+   input.excelButton {
+   width: 70px;
+   height: 35px;
+   border-radius: 10px;
+   background-size:100% 100%;
+   margin-right:-29px;
+   z-index:100;
+   }
+
+   input.profitButton {
+      width: 70px;
+      height: 35px;
+      border-radius: 10px;
+      background-size:100% 100%;
+      z-index:100;
+      
+   }
+   
+   .excelButton:hover, .profitButton:hover {
+   border: 1.5px inset #ccc
+}
+   
+}

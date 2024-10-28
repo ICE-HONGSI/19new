@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="controlSql">
+	<select id="selectAll" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT * 
+			FROM tbl_web 
+			WHERE Gno=#{gno} 
+			ORDER BY DT DESC 
+			limit 1;
+		]]>
+	</select>
+
+
+	<select id="basic" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT
+				* 
+			FROM
+				tbl_group
+			WHERE
+				Gno=#{gno}
+	]]>
+	</select>
+	
+	<select id="get_upwd" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT
+				UPwd
+			FROM
+				tbl_user
+			WHERE
+				Uuid= #{userId}
+	]]>
+	</select>
+</mapper>

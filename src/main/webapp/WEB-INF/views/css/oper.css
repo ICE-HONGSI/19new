@@ -1,0 +1,1157 @@
+/*Oper frame*/
+.operDetail {
+	margin: 5px 40px;
+	padding: 0;
+}
+
+input[type=date]::-ms-clear {
+	display: none;
+}
+/* clears the 'X' from Internet Explorer */
+input[type=date]::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+input[type=date]::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="date"]::-webkit-date-decoration, input[type="date"]::-webkit-date-cancel-button,
+	input[type="date"]::-webkit-date-results-button, input[type="date"]::-webkit-date-results-decoration
+	{
+	display: none;
+}
+
+.operLeft {
+	margin: 0;
+	margin-left: 13px;
+	margin-right: 7px;
+	padding: 0;
+	height: 820px;
+	float: left;
+	width: 300px;
+	background: url(../img/oper/menuboard.png) no-repeat left top;
+}
+
+.operRight {
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+	float: right;
+	width: 1500px;
+	height: 820px;
+}
+
+.operDetail:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Oper Left*/
+.operLeft ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operLeft ul .bms {
+	margin-top: 45px;
+	border-top: solid 3px #1e2226;
+}
+
+.operLeft ul li a {
+	text-decoration: none;
+	line-height: 45px;
+	opacity: 0.5;
+	color: #ffffff;
+}
+
+.operLeft ul li {
+	margin: 0;
+	padding: 1px 0;
+	height: 45px;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: solid 3px #1e2226;
+	background-size: 100% 100%;
+}
+
+#operAct, .operLeft li:hover {
+	background-color: #55e0ae;
+}
+
+#operAct a {
+	color: #1d2126;
+	opacity: 1;
+	font-weight: bold;
+}
+
+/*Oper Right*/
+.operRightTitle {
+	width: 1500px;
+	height: 45px;
+	text-align: center;
+}
+
+.operRightTitle span {
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+/*1. BMS*/
+.operRightBMS {
+	height: 820px;
+	background: url(../img/oper/bms/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.operBMSHead {
+	margin: 50px 0 0 0;
+}
+
+.operBMSWrapper {
+	height: 625px;
+	overflow-y: auto;
+}
+
+.operBMSTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operBMSTable tr {
+	height: 60px;
+}
+
+.operBMSTable thead tr th {
+	padding: 10px 0;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.operBMSTable thead tr th span {
+	opacity: 0.6;
+}
+
+.operBMSTable tbody tr td {
+	background-color: #32353b;
+	padding: 0;
+	color: #ffffff;
+	font-size: 15px;
+	border: 2px solid #272C32;
+}
+
+.operBMSTable tbody tr td .detailImg {
+	width: 70px;
+	margin-top: 9px;
+}
+
+.detailImg:hover {
+	border: 1px solid #ffffff;
+}
+
+.operBMSTable tbody tr td .alarmImg {
+	width: 15px;
+}
+
+.operBMSTable #no {
+	width: 70px;
+}
+
+.operBMSTable #date {
+	width: 250px;
+}
+
+.operBMSTable #v, .operBMSTable #a, .operBMSTable #soc, .operBMSTable #dinfo,
+	.operBMSTable #trayinfo, .operBMSTable #c, .operBMSTable #av,
+	.operBMSTable #alarm, .operBMSTable #maxv, .operBMSTable #minv,
+	.operBMSTable #state {
+	width: 100px;
+}
+
+.operBMSTable #alarm {
+	width: 60px;
+}
+
+/* BMS fancybox */
+.detailModal {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.closeDetailInfo {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	top: -25px;
+	right: -10px;
+}
+
+.detailInfo {
+	transform: translate(-50%, -50%);
+	width: 1500px;
+	height: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	background: url(../img/oper/bms/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.detailTitle {
+	width: 1500px;
+	height: 40px;
+	text-align: center;
+}
+
+.detailTitle span {
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.detail_box {
+	margin: 0 40px 50px 40px;
+	height: 610px;
+}
+
+.detailDate {
+	width: 1400px;
+	height: 45px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.detailDate span {
+	font-size: 15px;
+	font-weight: bold;
+	opacity: 0.8;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.detailTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.detailTable tr {
+	height: 45px;
+}
+
+.detailTable thead tr th {
+	padding: 10px 0;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.detailTable thead tr th span {
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+.detailTable tbody tr td {
+	background-color: #32353b;
+	padding: 0;
+	color: #ffffff;
+	font-size: 15px;
+	border: 2px solid #272C32;
+}
+
+.detailTableWidth {
+	width: 350px;
+}
+
+.detailTable #detailv {
+	background-color: #1d2126;
+	font-weight: bold;
+}
+
+.bmsdetail #detailv2 {
+	background-color: #32353b;
+	font-weight: bold;
+	text-align: right;
+	color: #ffffff;
+	opacity: 0.6;
+	width: 250px;
+}
+
+.bmsdetail #detailv3, .bmsdetail #emp_info_1-3 {
+	width: 100px;
+	background-color: #32353b;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	opacity: 0.6;
+	padding-right: 5em;
+}
+
+.bmsdetail {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: hidden;
+	border-collapse: collapse;
+	height: 120px;
+}
+
+.imgsize {
+	width: 15px;
+}
+
+.bmsdetail h2 {
+	padding-top: 2.5em;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	height: 75px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+	width: 150px;
+	float: left;
+}
+
+.bmsdetail table {
+	height: 106px;
+	border-collapse: collapse;
+	width: 1250px;
+	margin-top: 14px
+}
+
+.detailTable #detailvalue {
+	color: #55e0ae;
+	font-size: 20px;
+}
+
+.detailSubtable {
+	margin: 0 auto;
+	width: 1400px;
+	height: 340px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	border: 1px solid #272C32;
+	text-align: center;
+}
+
+.detailSubtable tbody tr td {
+	margin: 0 auto;
+	width: 280px;
+	height: 45px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: left;
+	background-color: #32353b;
+	padding: 0;
+	font-size: 15px;
+}
+
+.detailSubtable tbody tr td img {
+	margin-left: 30px;
+	width: 10px;
+}
+
+.detailSubtable tbody tr td span {
+	margin: 20px 10px;
+	line-height: 30px;
+	font-size: 15px;
+	padding: 0;
+	color: #ffffff;
+	opacity: 0.6;
+}
+
+/* tray info */
+#trayChartCanvas {
+	width: 95%;
+	height: 240px;
+}
+
+svg {
+	margin: 10px 30px;
+}
+
+.trayModal {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	overflow-x: hidden;
+	overflow-y: hidden;
+	z-index: 100;
+}
+
+.closeTrayInfo {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	top: -25px;
+	right: -10px;
+}
+
+.trayInfo {
+	transform: translate(-50%, -50%);
+	width: 1500px;
+	height: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	background: url(../img/oper/bms/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.trayTitle {
+	width: 1500px;
+	height: 40px;
+	text-align: center;
+}
+
+.trayTitle span {
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.tray_box {
+	margin: 50px 40px;
+	height: 560px;
+}
+
+.trayButtonSection, .trayChartSection {
+	width: 1200px;
+	height: 280px;
+	margin: 0 auto;
+}
+
+.trayButton {
+	float: left;
+	text-align: center;
+	width: 196px;
+	height: 46px;
+	margin: 20px;
+	border: 2px solid #b3b3b3;
+}
+
+.trayButton:focus {
+	background-color: #55e0ae;
+	border-color: #55e0ae;
+}
+
+.trayButton a {
+	width: 196px;
+	height: 46px;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 46px;
+	color: #b3b3b3;
+}
+
+.trayButton:hover {
+	background-color: #55e0ae;
+	border-color: #55e0ae;
+	font-weight: bold;
+}
+
+.trayButtonSection #trayAct a {
+	color: #000000;
+	font-weight: bold;
+}
+
+.trayButtonSection #trayAct {
+	background-color: #55e0ae;
+	border-color: #55e0ae;
+}
+
+/*2. PCS & meta*/
+#pcsDetail, #metaDetail {
+	display: none;
+}
+
+#pcsDetail li a, #metaDetail li a {
+	color: #acabaa;
+}
+
+#pcsDetail li, #metaDetail li {
+	padding: 0;
+	font-size: 1.2vw;
+	text-align: center;
+	background-color: #3a9977
+}
+
+#pcsSelected, #pcsDetail li a:hover, #metaSelected, #metaDetail li a:hover
+	{
+	opacity: 1;
+	color: #ffffff !important;
+}
+
+/*2. PCS*/
+.operRightPCS {
+	height: 820px;
+	background: url(../img/oper/pcs/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.operPCSWrapper {
+	margin: 50px 40px;
+	height: 675px;
+	overflow-y: none;
+}
+
+.operPCSTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operPCSSubtable {
+	margin: 0 auto;
+	width: 1400px;
+	height: 370px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operPCSSubtable tbody {
+	border: 2px solid #272C32;
+	border-top: 10px solid #272C32;
+}
+
+.operPCSTable tr {
+	height: 40px;
+}
+
+.operPCSTable thead tr th {
+	padding: 0;
+	width: 230px;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+	border: 2px solid #272C32;
+}
+
+.operPCSTable thead tr th span {
+	opacity: 0.6;
+}
+
+.operPCSTable tbody tr td {
+	/*background-color: #32353b;*/
+	padding: 0;
+	font-size: 14px;
+	border: 2px solid #272C32;
+}
+
+.operPCSTable #sub {
+	width: 240px;
+}
+
+.operPCSTable #dc {
+	width: 232px;
+}
+
+.operPCSTable #ac {
+	width: 928px;
+}
+
+.operPCSSubtable tbody tr td {
+	margin: 0 auto;
+	width: 200px;
+	height: 20px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: left;
+	background-color: #32353b;
+	padding: 0px;
+	font-size: 15px;
+}
+
+.operPCSSubtable tbody tr td img {
+	margin-left: 30px;
+	width: 10px;
+}
+
+.operPCSSubtable tbody tr td span {
+	margin: 5px 10px;
+	line-height: 30px;
+	font-size: 15px;
+	padding: 0;
+	color: #ffffff;
+	opacity: 0.6;
+}
+
+.operPCSTable #title {
+	background-color: #1d2126;
+	color: #ffffff;
+}
+
+.operPCSTable #dc {
+	color: #00e08f;
+	font-weight: bold;
+}
+
+.operPCSTable #total {
+	color: #ff8e38;
+	font-weight: bold;
+}
+
+.operPCSTable #l1 {
+	color: #f44063;
+	font-weight: bold;
+}
+
+.operPCSTable #l2 {
+	color: #fabc1e;
+	font-weight: bold;
+}
+
+.operPCSTable #l3 {
+	color: #42adff;
+	font-weight: bold;
+}
+
+/*3. meta*/
+.operRightMeta {
+	height: 820px;
+	background: url(../img/oper/meta/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.operMetaWrapper {
+	margin: 50px 40px;
+	height: 675px;
+	overflow-y: none;
+}
+
+.operMetaTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operMetaTable thead tr th {
+	padding: 0;
+	height: 60px;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.operMetaTable thead tr th span {
+	opacity: 0.6;
+}
+
+.operMetaTable tbody tr td {
+	background-color: #32353b;
+	font-size: 15px;
+	height: 60px;
+	border: 2px solid #272C32;
+}
+
+.operMetaTable #title {
+	width: 200px;
+	background-color: #1d2126;
+	color: #ffffff;
+	border: solid 2px #272C32
+}
+
+.operMetaTable #total {
+	width: 300px;
+	color: #ff8e38;
+	font-weight: bold;
+}
+
+.operMetaTable #l1 {
+	width: 300px;
+	color: #f44063;
+	font-weight: bold;
+}
+
+.operMetaTable #l2 {
+	width: 300px;
+	color: #fabc1e;
+	font-weight: bold;
+}
+
+.operMetaTable #l3 {
+	width: 300px;
+	color: #42adff;
+	font-weight: bold;
+}
+
+.operMetaSubTable {
+	margin: 0 auto;
+	width: 1400px;
+	height: 150px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operMetaSubTable tbody {
+	border: 1px solid #272C32;
+	border-top: 10px solid #272C32
+}
+
+.operMetaSubTable tbody tr td {
+	margin: 0 auto;
+	width: 200px;
+	height: 40px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: left;
+	background-color: #32353b;
+	padding: 0;
+	font-size: 15px;
+}
+
+.operMetaSubTable tbody tr td img {
+	margin-left: 30px;
+	width: 10px;
+}
+
+.operMetaSubTable tbody tr td span {
+	margin: 20px 10px;
+	line-height: 30px;
+	font-size: 15px;
+	padding: 0;
+	color: #ffffff;
+	opacity: 0.6;
+}
+
+/*4. System Info*/
+.operRightSystem {
+	height: 820px;
+	background: url(../img/oper/systeminfo/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.operSystemWrapper {
+	margin: 50px 40px;
+	margin-top:20px;
+	height: 675px;
+	overflow-y: auto;
+}
+
+.operSystemTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operSystemTable thead tr th span {
+	opacity: 0.6;
+}
+
+.operSystemTable tr {
+	height: 60px;
+}
+
+.operSystemTable thead tr th {
+	padding: 0;
+	background-color: #1d2126;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.operSystemTable tbody tr td {
+	background-color: #32353b;
+	color: #ffffff;
+	font-size: 15px;
+	border: 2px solid #272C32;
+}
+
+.operSystemTable #name, .operSystemTable #ip, .operSystemTable #port {
+	width: 400px;
+}
+
+.operSystemTable #id {
+	width: 200px;
+}
+
+/*5. Event List*/
+.operRightEvent {
+	height: 820px;
+	background: url(../img/oper/eventlist/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.operEventWrapper {
+	margin: 50px 40px;
+	height: 675px;
+	overflow-y: auto;
+}
+
+.eventSearch {
+	margin: 0 auto;
+	width: 1400px;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.eventSearch .searchDate {
+	float: left;
+	width: 1000px;
+	height: 40px;
+}
+
+.eventSearch .searchDate span {
+	float: left;
+	margin-right: 20px;
+	line-height: 40px;
+	font-size: 20px;
+	opacity: 0.8;
+	color: #ffffff;
+}
+
+.eventSearch .searchDate option {
+	background-color: #595959;
+	font-size: 17px;
+	opacity: 1;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.eventSearch .searchDate .yearSearch {
+	color: #ffffff;
+	font-size: 17px;
+	float: left;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	margin-right: 10px;
+	padding-left: 20px;
+	width: 190px;
+	line-height: 45px;
+	height: 35px;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #575757;
+	font-family: "Noto Sans KR", sans-serif !important;
+}
+
+.eventSearch .searchDate .monthDaySearch {
+	color: #ffffff;
+	font-size: 17px;
+	float: left;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	margin-right: 10px;
+	padding-left: 20px;
+	width: 92px;
+	line-height: 45px;
+	height: 40px;
+	background: url(../img/oper/eventlist/month_day.png) no-repeat left
+		center;
+}
+
+.eventSearch .buttonSection {
+	float: right;
+	width: 400px;
+	height: 40px;
+}
+
+.eventSearch .buttonSection .rightButton {
+	float: right;
+	height: 36px;
+	margin-left: 5px;
+	border: 0px;
+}
+
+.eventSearch .buttonSection .rightButton:hover {
+	border: 1.5px inset #CCCCCC;
+}
+
+.operEventTable {
+	margin: 0 auto;
+	width: 1400px;
+	overflow-y: auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.operEventTable tr {
+	height: 60px;
+}
+
+.operEventTable thead tr th {
+	padding: 0;
+	background-color: #1d2126;
+	font-size: 16.5px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.operEventTable thead tr th span {
+	opacity: 0.6;
+}
+
+.operEventTable tbody tr td {
+	background-color: #32353b;
+	color: #ffffff;
+	font-size: 15px;
+	border: 2px solid #272C32;
+}
+
+.operEventTable #no {
+	width: 70px;
+}
+
+.operEventTable #date, .operEventTable #name {
+	width: 300px;
+}
+
+.operEventTable #content {
+	width: 730px;
+}
+
+td.bms_item {
+	width: 25%;
+}
+
+td.bms_value {
+	width: 25%;
+}
+
+td.bms_title1 {
+	color: white;
+	width: 25%;
+}
+
+td.bms_value1 {
+	width: 25%;
+}
+
+th.bms_left_title {
+	text-align: center;
+	width: 15%;
+	color: white;
+	background-color: #1d2126;
+}
+
+.bottom_border {
+	border-bottom: 1px solid #272C32;
+}
+
+.click {
+	width: 67px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.clickTray {
+	width: 67px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.click:hover {
+	border: 1.5px inset #ccc
+}
+
+.clickTray:hover {
+	border: 1.5px solid #ccc
+}
+
+table.operbmsSubtable {
+	height: 430px;
+}
+
+#emp_info_1-3, #emp_info_1-1, #emp_info_1-4 {
+	padding-left: 25px;
+	padding-right: 25px;
+	color: black;
+	font-weight: bold;
+	background-color: #ffffff;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	opacity: 0.8;
+}
+
+@media only screen and ( max-width: 420px ) {
+
+	.operRight {
+		float: none;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.operLeft {
+		margin: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 0;
+		height: 120px;
+		float: none;
+		width: 100%;
+		background: url(../img/oper/menuboard.png) no-repeat left top;
+	}
+	.operLeft ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.operLeft ul li {
+		margin: 0;
+		padding: 1px 0;
+		height: 25px;
+		font-size: 15px;
+		float: left;
+		text-align: center;
+		border-bottom: solid 3px #1e2226;
+		background-size: 100% 100%;
+	}
+	.background {
+		width: 100%;
+	}
+	
+	.operRightTitle {
+		width: 90%;
+	}
+	
+}
+div.operPCSWrapper {
+	margin-top: 0%;
+}
+
+td.pcs_item {
+	width: 25%;
+}
+
+td.pcs_value {
+	width: 25%;
+}
+
+td.pcs_title1 {
+	background: #1d2126;
+	color: #ffffff;
+	width: 16.5%;
+	opacity: 0.6;
+}
+
+td.pcs_value1 {
+	color: white;
+	background: #32353b;
+	width: 16.5%;
+}
+
+th.pcs_left_title {
+	text-align: center;
+	width: 16.7%;
+	color: white;
+	background-color: #1d2126;
+}
+
+.bottom_border {
+	border-bottom: 1px solid #272C32;
+}
+
+div#pcsAlarmBox {
+	margin: 11px;
+	height: 5.5%;
+	width: 7%;
+	background-color: #68D168;
+	border-radius: 10%;
+	float: left;
+	font-size: 22px; //
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+div#pcsStatusBox {
+	margin: 11px;
+	height: 5.5%;
+	width: 7%;
+	background-color: #68D168;
+	border-radius: 10%;
+	float: left;
+	font-size: 22px; //
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+table.operPCSSubtable {
+	height: 300px;
+}
+
+div#topTime {
+	margin-top: 30px;
+	margin-right: 15px;
+	opacity: 0.6;
+	color: #ffffff;
+	float: right;
+}
+
+.system_name{
+	color:white !important;
+	opacity: 0.8;
+	margin-left:10px;
+	
+}
+
+.infoTable{
+	margin-bottom:25px;
+}
+
+/* oper SystemInfo */
+.system_name {
+	color: #ffffff;
+}

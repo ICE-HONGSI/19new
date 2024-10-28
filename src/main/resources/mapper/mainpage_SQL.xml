@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mainpageSql">
+
+	<select id="selectRunResult" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT
+				*
+			FROM
+				tbl_web
+			WHERE
+				Gno=#{gno}
+			ORDER BY DT DESC limit 1
+	]]>
+	</select>
+
+	<select id="selectASCResult" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT DT, G_PVOut, G_ESSIn, G_ESSOut FROM tbl_web WHERE Gno=#{gno}  AND date_format(now(),'%Y-%m') = date_format(DT,'%Y-%m') ORDER BY DT ASC limit 1; 
+	]]>
+	</select>
+	
+	<select id="selectNOWResult" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT DT, G_PVOut , G_ESSIn, G_ESSOut FROM tbl_web WHERE Gno=#{gno} ORDER BY DT DESC limit 1; 
+		]]>
+	</select>
+
+
+	<select id="basic" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT
+				* 
+			FROM
+				tbl_group
+			WHERE
+				Gno=#{gno}
+	]]>
+	</select>
+
+
+	<select id="chartdata" parameterType="hashmap"
+		resultType="hashmap">
+		<![CDATA[
+			SELECT date_format(DT,"%H:%i") AS TIME , R_PVOut, ROUND(R_ESSIn+R_ESSOut,1) AS ESS
+			FROM tbl_web
+			WHERE Gno=#{gno}
+			ORDER BY DT ASC;
+	]]>
+	</select>
+</mapper>

@@ -1,0 +1,264 @@
+.trendDetail {
+	margin: 5px 40px;
+	padding: 0;
+}
+
+.trendSubWrapper {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 1650px;
+	height: 400px;
+}
+
+.trendSubWrapper .trendTitle {
+	width: 1650px;
+	height: 45px;
+	position: relative;
+}
+
+.trendSubWrapper .trendTitle .trend_date_select {
+	color: #ffffff;
+	font-size: 17px;
+	margin-right: 20px;
+	padding-left: 20px;
+	text-align: left;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: url(../img/trend/date_day.png) no-repeat left top;
+	width: 183px;
+	height: 35px;
+	line-height: 40px;
+	top: 5px;
+	right: 0px;
+	position: absolute;
+}
+
+.trendSubWrapper .trendTitle .trend_date_select option {
+	margin-top: 0;
+	background-color: #595959;
+	font-size: 17px;
+	opacity: 1;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.trendSubWrapper .define_bar {
+	height: 45px;
+	line-height: 45px;
+	margin: 0 40px;
+	text-align: right;
+}
+
+.trendSubWrapper .trendbar {
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 30px;
+}
+
+.trendSubWrapper .bar img {
+	width: 40px;
+	margin-bottom: 4px;
+	margin-right: 5px;
+}
+
+.trendSubWrapper .bar_bold {
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 30px;
+}
+
+.trendSubWrapper .bar_bold img {
+	height: 10px;
+	width: 30px;
+	margin-right: 5px;
+}
+
+.trendSubWrapper #bar1 {
+	float: right;
+	color: #55e0ae;
+}
+
+.trendSubWrapper #bar2 {
+	float: right;
+	color: #fabc1e;
+}
+
+.trendSubWrapper #bar3 {
+	float: right;
+	color: #fabc1e;
+}
+
+.trendSubWrapper #bar4 {
+	float: right;
+	color: #f44063;
+}
+
+.trendSubWrapper #bar5 {
+	float: right;
+	color: #55e0ae;
+}
+
+.trendSubWrapper .trendTitle .trend_year_select {
+	text-align: left;
+	color: #ffffff;
+	font-size: 17px;
+	padding-left: 20px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: url(../img/trend/date_year.png) no-repeat left top;
+	width: 125px;
+	height: 35px;
+	line-height: 40px;
+	top: 5px;
+	right: 130px;
+	position: absolute;
+}
+
+.trendSubWrapper .trendTitle .trend_month_select {
+	text-align: left;
+	color: #ffffff;
+	font-size: 17px;
+	margin-right: 20px;
+	padding-left: 15px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: url(../img/trend/date_month.png) no-repeat left top;
+	width: 88px;
+	height: 35px;
+	line-height: 40px;
+	top: 5px;
+	right: 0px;
+	position: absolute;
+}
+
+.trendSubWrapper .trendTitle .trend_year_select option, .trendSubWrapper .trendTitle .trend_month_select option
+	{
+	background-color: #595959;
+	font-size: 17px;
+	opacity: 1;
+}
+
+.trendSubWrapper .trendTitle span {
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.trendSubWrapper .trend_chart {
+	width: 1570px;
+	height: 300px;
+	margin: 0 auto 20px auto;
+}
+
+#tsOne {
+	background: url(../img/trend/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+#tsTwo {
+	background: url(../img/trend/board.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.TrendForm {
+	width: 250px;
+	height: 35px;
+	line-height: 40px;
+	top: 5px;
+	right: 0px;
+	position: absolute;
+}
+
+input.form_btn {
+	background: url(../img/trend/button.png) no-repeat;
+	background-size: 100% 100%;
+	border-radius: 5px;
+	border: none;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.form_btn:hover {
+	border: 1.5px inset #ccc
+}
+
+@media only screen and ( max-width: 420px ) {
+	.trendDetail {
+		padding: 70 10;
+		margin:0;
+	}
+	.trendSubWrapper {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    height: 55%;
+}
+	.bodyWrapper {
+    /* height: 830px; */
+}
+.TrendForm {
+    width: 100%;
+    /* line-height: 70px; */
+    top: 35;
+    /* margin: 0 0 0 0; */
+    right: 0px;
+    position: absolute;
+}
+.trendSubWrapper .define_bar {
+    height: 45px;
+    margin: 30px 30px 0 30px;
+    text-align: center;
+}
+.trendSubWrapper .define_bar {
+    line-height: 45px;
+}
+.trendSubWrapper .trendTitle {
+    /* width: 1650px; */
+    /* height: 45px; */
+    position: relative;
+}
+.trendSubWrapper .trendTitle {
+     width: 100%;
+    /* height: 45px; */
+    /* position: relative; */
+}
+.trendSubWrapper #bar1 {
+    float: left; 
+    color: #55e0ae;
+}
+.trendSubWrapper .trendbar {
+    font-size: 13px;
+    font-weight: normal;
+    
+    /* font-weight: normal; */
+    margin-left: 0px;
+}
+.trendSubWrapper #bar2 {
+    /* float: right; */
+    color: #fabc1e;
+}
+.trendSubWrapper .trend_chart {
+    margin: 0 auto 20px auto;
+    overflow: auto;
+    width:100%;
+}
+.trendSubWrapper .bar_bold {
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+}

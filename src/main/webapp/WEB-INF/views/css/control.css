@@ -1,0 +1,672 @@
+/* Common */
+select::-ms-expand {
+	display: none;
+}
+
+.controlRunPopup, .controlStopPopup, .controlAutoPopup,
+	.controlManualPopup {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.55);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.runPopup {
+	transform: translate(-50%, -50%);
+	width: 550px;
+	height: 200px;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	background: url(../img/control/popup_background.png) no-repeat left top;
+	background-size: 100% 100%;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	fadeOut
+}
+
+.popupImg {
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.popupFont {
+	float: left;
+	margin-left: 20px;
+	width: 500px;
+}
+
+#popupMessage1 {
+	text-align: left;
+	font-size: 24px;
+}
+
+#popupMessage2 {
+	text-align: left;
+	color: rgba(160, 165, 165, 0.8);
+	font-size: 16px;
+}
+
+.runSubmit {
+	width: 100px;
+	height: 31px;
+	border-radius: 5px;
+	margin-top: 30px;
+	background-image: url(../img/control/accept.png);
+	background-size: 100% 41px;
+	border: none;
+	cursor: pointer;
+}
+
+.runSubmit:hover {
+	border: 1.5px inset #ccc
+}
+
+.popupButton {
+	margin-left: 200px;
+}
+
+.controlDetail {
+	width: 1835px;
+	height: 820px;
+	margin: 5 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.controlDetailRow {
+	width: 1835px;
+	height: 405px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.controlDetailRow2 {
+	margin-top: 10px;
+}
+
+.controlDetailSmallInfoBox {
+	width: 360px;
+	height: 400px;
+	margin: 0 auto 0 0;
+	background: url(../img/control/smallInfoBoxBackground.png) no-repeat
+		left top;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.controlDetailMenuBox {
+	width: 359px;
+	height: 400px;
+	float: left;
+	background: url(../img/control/menu-box-background.png) no-repeat left
+		top;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.controlDetailOptionButtonBox {
+	width: 374px;
+	height: 400px;
+	float: left;
+	background: url(../img/control/option-box-background.png) no-repeat left
+		top;
+	background-size: 100% 100%;
+}
+
+.controlDetailControlBox {
+	width: 1096px;
+	height: 400px;
+	float: left;
+	background: url(../img/control/control-box-background.png) no-repeat
+		left top;
+	background-size: 100% 100%;
+}
+
+.controlBoxTitleContainer {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.controlBoxTitle {
+	color: #ffffff;
+	opacity: 0.8;
+	font-size: 23px;
+	line-height: 50px;
+	font-weight: bold;
+	padding: 0 12px;
+}
+
+.controlBoxContentContainer {
+	height: 347;
+	margin: 22px 20px;
+}
+
+.controlDetailSmallInfoBoxContent {
+	color: #ffffff;
+	font-size: 22px;
+	opacity: 0.9;
+}
+
+.dataLine {
+	margin: 8px 0;
+	padding: 0;
+	border: 1px solid #222222;
+}
+
+.verticalLine {
+	border-left: 5px solid #4d535c;
+	height: 270px;
+	align-self: center;
+}
+
+.refreshButton {
+	float: right;
+	height: 40px;
+	width: 40px;
+	line-height: 59px;
+	opacity: 1 !important;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.controlContentFloatRight {
+	float: right;
+}
+
+/* PMS Control */
+.pmsControlContent {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+#controlRunButton {
+	color: #ffffff;
+	float: left;
+	margin: 120px 0 0 5px;
+	text-align: center;
+	background-color: #474b51;
+	border-radius: 12px;
+	width: 47%;
+	height: 53px;
+	line-height: 74px;
+	font-size: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+#controlStopButton {
+	color: #ffffff;
+	float: right;
+	text-align: center;
+	margin-top: 120px;
+	background-color: #474b51;
+	border-radius: 12px;
+	width: 47%;
+	height: 53px;
+	line-height: 74px;
+	font-size: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+#controlRunButton:hover, #controlStopButton:hover {
+	border: 1.5px inset #ccc
+}
+
+/* Equipment Commnucation State */
+.controlDot {
+	float: right;
+	width: 4px;
+	height: 4px;
+	margin: 8px;
+	padding: 4px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #00e08f;
+}
+
+/* METER  */
+.controlData {
+	width: 95px;
+	color: #fabc1e;
+	float: left;
+}
+
+.controlUnit {
+	color: #ffffff;
+	opacity: 0.6;
+	font-size: 22px;
+	margin-left: 5px;
+}
+
+.controlContentFloatRight span {
+	background: url(../img/main/run-info/data-background.png) no-repeat left
+		top;
+	background-size: 100% 100%;
+	text-align: center;
+	width: 95px;
+}
+
+/* PCS */
+.controlCharging {
+	padding: 0 35px;
+	color: #000000;
+	display: inline-block;
+	background: url(../img/control/new_greenstatus.png);
+	background-size: 100% 100%;
+	font-weight: 500;
+}
+
+.controlStop {
+	padding: 0 35px;
+	color: #000000;
+	display: inline-block;
+	background: url(../img/control/new_redstatus.png);
+	background-size: 100% 100%;
+	font-weight: 500;
+}
+
+/* Control menu */
+.controlMenuSelected {
+	color: #000000;
+	background-color: #50d0a3;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 8px 5px;
+}
+
+.controlMenuUnselected {
+	color: #ffffff;
+	opacity: 0.5;
+	font-size: 22px;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 8px 5px;
+}
+
+/* Control Options */
+.controlDetailOptionButtonBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.controlOptionTitle {
+	padding: 10px;
+	font-size: 13px;
+}
+
+.selectPCS {
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	background: url(../img/control/PCS-select.png);
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	font-size: 18px;
+	-webkit-appearance: none;
+	border: none;
+	text-align: center;
+	padding-left: 125px;
+}
+
+.selectPCS option {
+	background-color: #595959;
+	font-size: 18px;
+	opacity: 1;
+}
+
+.modeButtonSelected {
+	width: 300px;
+	height: 40px;
+	background: url(../img/control/new_modeact.png);
+	background-color: #dfa81a;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+
+.modeButtonUnselected {
+	width: 300px;
+	height: 40px;
+	margin: 5px auto;
+	background: url(../img/control/new_modedeact.png);
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#resetButton {
+	margin: 30px auto;
+	background: url(../img/control/new_reset2.png);
+	text-align: center;
+	line-height: 40px;
+	color: rgb(125, 220, 180);
+	border-radius: 10px;
+	font-size: 20px;
+	border: none;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#autoModeButton, #manualModeButton {
+	border: none;
+	font-weight: bold;
+}
+
+#autoModeButton:hover, #manualModeButton:hover, #resetButton:hover {
+	/*box-shadow: 0px 4px 8px 4px rgba(140, 140, 140, 0.5);*/
+	border: 1.5px inset #ccc
+}
+
+/* Control Detail */
+.controlDetailContainer {
+	display: flex;
+}
+
+.controlDetailTitleContainer {
+	padding: 3px 13px;
+	height: 37px;
+}
+
+.controlDetailTitle {
+	padding: 0px 5px;
+}
+
+.controlDetailBoxContentContainer {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 357px;
+	width: 1096px;
+	color: #ffffff;
+}
+
+.manualMode {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.controlDetailManulBox {
+	width: 362px;
+	height: 357px;
+	padding: 22px;
+}
+
+.manualModeChargingButton {
+	font-size: 20px;
+	margin: 30px auto;
+	color: #51cfa3;
+	line-height: 40px;
+	width: 250px;
+	height: 40px;
+	background: url(../img/control/control-charging.png);
+	background-size: 100% 100%;
+}
+
+.manualModeOutPutModeButton {
+	text-align: left;
+	padding-left: 30px;
+	font-size: 20px;
+	margin: 30px auto;
+	color: #000000;
+	line-height: 40px;
+	width: 250px;
+	height: 40px;
+	background: url(../img/control/output-mode.png);
+	background-size: 100% 100%;
+}
+
+.manualModedisChargingButton {
+	font-size: 20px;
+	margin: 80px auto;
+	color: #c79a25;
+	line-height: 40px;
+	width: 250px;
+	height: 40px;
+	background: url(../img/control/discharging.png);
+	background-size: 100% 100%;
+}
+
+.manualModedisStopButton {
+	font-size: 20px;
+	margin: 165px auto;
+	color: #ffffff;
+	line-height: 40px;
+	width: 250px;
+	height: 40px;
+	background: url(../img/control/stop.png);
+	background-size: 100% 100%;
+}
+
+/* Engineer */
+.controlDetailSmallInfoBoxEngineer {
+	margin: 0 auto 0 8px;
+}
+
+.applyButtonEngineer {
+	background: url(../img/control/apply.png);
+	background-size: 100% 100%;
+	width: 140px;
+	height: 33px;
+	float: right;
+	position: relative;
+	margin-top: 88px;
+	color: #ffffff;
+	line-height: 33px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.applyButtonOperationSetting1 {
+	background: url(../img/control/apply.png);
+	background-size: 100% 100%;
+	width: 140px;
+	height: 33px;
+	float: right;
+	position: relative;
+	margin-top: 38px;
+	color: #ffffff;
+	line-height: 33px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.applyButtonOperationSetting2 {
+	background: url(../img/control/apply.png);
+	background-size: 100% 100%;
+	width: 140px;
+	height: 33px;
+	float: right;
+	position: relative;
+	margin-top: 88px;
+	color: #ffffff;
+	line-height: 33px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* Operation Setting  */
+.controlDetailSmallInfoBoxOperationSetting {
+	margin: 0 auto 0 8px;
+}
+
+/* pwInput Modal */
+.pwModal {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.pwInput {
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 200px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	background-color: #2F353D;
+	border-radius: 10px;
+}
+
+.pwInput .pwContents {
+	width: 500px;
+	height: 150px;
+	margin: 25px auto;
+}
+
+.pwInput .pwContents .pwTitle span {
+	font-size: 23px;
+	color: #ffffff;
+	line-height: 40px;
+}
+
+.pwTitle {
+	width: 500px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.pwInputField, .pwButtonSection {
+	width: 500px;
+	height: 50px;
+}
+
+.pwInputField input {
+	width: 500px;
+	height: 40px;
+	padding: 12px 10px;
+	font-size: 15px;
+	color: #8F8F8F;
+}
+
+/* .pwInouinput[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+} */
+.pwButtonSection button {
+	float: right;
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.pwClose {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #2F353D;
+	border: 2px solid #50d0a3;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.pwConfirm {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #50d0a3;
+	border: 2px solid #50d0a3;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.warning {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.warningModeChange {
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 150px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	background-color: #2F353D;
+	border-radius: 10px;
+}
+
+.warningButtonSection {
+	margin: auto;
+}
+
+.warningButtons button {
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.warningClose {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #2F353D;
+	border: 2px solid #50d0a3;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.warningConfirm {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #50d0a3;
+	border: 2px solid #50d0a3;
+	border-radius: 5px;
+	color: #000000;
+}
