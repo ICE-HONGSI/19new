@@ -7,10 +7,11 @@
     http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<bean id="dataSource"
-		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		  class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/pmsdb?useSSL=false&amp;serverTimezone=UTC&amp;characterEncoding=utf8" />
+		<property name="url" value="jdbc:mysql://localhost:3308/pmsdb?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC&amp;characterEncoding=utf8" />
 		<property name="username" value="root" />
-		<property name="password" value="ubn0312050869*" />
+		<property name="password" value="ice1234" />
 	</bean>
+
 </beans>

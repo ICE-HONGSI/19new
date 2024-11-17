@@ -31,14 +31,14 @@
 	<context:component-scan	base-package="com.ubinetsys.pms" />
 	
 
-	<!-- by jerry (20190611) -->	
-    <beans:bean id="LoginInterceptor" class="com.ubinetsys.pms.interceptor.LoginInterceptor"></beans:bean>    	
+	<!-- by jerry (20190611) -->
+    <beans:bean id="LoginInterceptor" class="com.ubinetsys.pms.interceptor.LoginInterceptor"></beans:bean>
     <interceptors>
         <interceptor>
             <!--  mapping path="/pms/**"/ -->
             <mapping path="/**"/>
             <beans:ref bean="LoginInterceptor"/>
         </interceptor>
-    </interceptors>	
+    </interceptors>
 
 </beans:beans>
