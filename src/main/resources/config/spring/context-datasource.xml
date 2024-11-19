@@ -9,9 +9,9 @@
 	<bean id="dataSource"
 		  class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3308/pmsdb?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC&amp;characterEncoding=utf8" />
-		<property name="username" value="root" />
-		<property name="password" value="ice1234" />
+		<property name="url" value="jdbc:mysql://walab.handong.edu:3306/ice?serverTimezone=UTC" />
+		<property name="username" value="ice" />
+		<property name="password" value="f8KAgW56G6FWtvQh" />
 	</bean>
 
 </beans>

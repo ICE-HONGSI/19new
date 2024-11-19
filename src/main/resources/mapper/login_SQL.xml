@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="userSql">	
+<mapper namespace="userSql">
 	<select id="userLogin" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
-			SELECT Uuid,UPwd FROM tbl_user WHERE Uuid= #{userId} and UPwd=#{password};
+		SELECT A.Uuid, A.UPwd
+		FROM tbl_user A
+		WHERE A.Uuid = #{userId} AND A.UPwd = #{password};
 		]]>
 	</select>
-	
+
 	<select id="userLogininfo" parameterType="hashmap" resultType="com.ubinetsys.pms.login.User">
 		<![CDATA[
-			SELECT Uuid,UName,Ulevel,LocNo,Gname,locX,locY FROM tbl_user A
-			inner join tbl_group B on A.LocNo = B.Gno		 
-			WHERE Uuid= #{userId} and MD5(UPwd)=#{password} limit 1;
+		SELECT
+			A.Uuid, A.UName, A.Ulevel, A.LocNo,
+			B.Gname, B.locX, B.locY
+		FROM
+			tbl_user A
+				INNER JOIN
+			tbl_group B
+			ON
+				A.LocNo = B.Gno
+		WHERE
+			A.Uuid = #{userId} AND MD5(A.UPwd) = #{password}
+			LIMIT 1;
 		]]>
 	</select>
-	
+
 	<select id="userLogininfo2" parameterType="hashmap" resultType="com.ubinetsys.pms.login.User">
 		<![CDATA[
-			SELECT Uuid,UName,Ulevel,LocNo,Gname,locX,locY FROM tbl_user A
-			inner join tbl_group B on A.LocNo = B.Gno		 
-			WHERE Uuid= #{userId} and UPwd=#{password} limit 1;
+		SELECT
+			A.Uuid, A.UName, A.Ulevel, A.LocNo,
+			B.Gname, B.locX, B.locY
+		FROM
+			tbl_user A
+				INNER JOIN
+			tbl_group B
+			ON
+				A.LocNo = B.Gno
+		WHERE
+			A.Uuid = #{userId} AND A.UPwd = #{password}
+			LIMIT 1;
 		]]>
 	</select>
 </mapper>

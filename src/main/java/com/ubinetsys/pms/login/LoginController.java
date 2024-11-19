@@ -25,13 +25,13 @@ public class LoginController {
 	private LoginBO loginBO;
 
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
-	private static final boolean isTestMode = true; // 테스트 모드 설정
 
 	@RequestMapping("/")
 	public String login(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
 		String page = autoLogin(request, response, session);
 		return page;
 	}
+
 
 	String autoLogin(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
 		boolean autologin = false;
@@ -48,12 +48,14 @@ public class LoginController {
 				if (cookie.getName().equals("userid")) {
 					userid = cookie.getValue();
 					cookie_userid = cookie;
-				} else if (cookie.getName().equals("pwd")) {
+				}
+				else if (cookie.getName().equals("pwd")) {
 					passwd = cookie.getValue();
 					cookie_pwd = cookie;
-				} else if (cookie.getName().equals("autologin")) {
-					if (cookie.getValue().isEmpty()) break;
-					else if (cookie.getValue().equals("1")) {
+				}
+				else if (cookie.getName().equals("autologin")) {
+					if(cookie.getValue().isEmpty()) break;
+					else if(cookie.getValue().equals("1")) {
 						cookie_autologin = cookie;
 						autologin = true;
 					}
@@ -61,16 +63,11 @@ public class LoginController {
 			}
 		}
 
-		if (autologin) {
-			User userinfo;
-			if (isTestMode) {
-				userinfo = createTestUser(); // 가짜 유저 생성
-			} else {
-				userinfo = loginBO.findByUserIdAndPassword(userid, passwd);
-			}
+		if(autologin) {
+			User userinfo = loginBO.findByUserIdAndPassword(userid, passwd);
+			if(userinfo != null) {
 
-			if (userinfo != null) {
-				// 쿠키 유효기간 수정
+				//쿠키 유효기간 수정
 				int expiretime = 60 * 60 * 24 * 30;
 				cookie_userid.setMaxAge(expiretime);
 				cookie_pwd.setMaxAge(expiretime);
@@ -92,9 +89,9 @@ public class LoginController {
 	public String logout(HttpSession session, HttpServletResponse response) {
 		session.invalidate();
 
-		// delete autologin cookie
+		//delete autologin cookie
 		Cookie cookie_pwd = new Cookie("pwd", null);
-		Cookie cookie_autologin = new Cookie("autologin", null);
+		Cookie cookie_autologin= new Cookie("autologin", null);
 		cookie_pwd.setMaxAge(0);
 		cookie_autologin.setMaxAge(0);
 		response.addCookie(cookie_autologin);
@@ -117,13 +114,7 @@ public class LoginController {
 
 		passwd = testMD5(passwd);
 
-		User userinfo;
-		if (isTestMode) {
-			userinfo = createTestUser(); // 가짜 유저 생성
-		} else {
-			userinfo = loginBO.findByUserIdAndPassword(userid, passwd);
-		}
-
+		User userinfo = loginBO.findByUserIdAndPassword(userid, passwd);
 		if (userinfo == null) {
 			logger.info("===> Login fail");
 			mav.addObject("msg", "f");
@@ -133,14 +124,15 @@ public class LoginController {
 			mav.addObject("msg", "s");
 
 			int mode = 0;
-			if (request.getParameter("saveId") != null) mode = 1;
-			if (request.getParameter("saveBoth") != null) mode = 2;
+			if(request.getParameter("saveId") != null) mode = 1;
+			if(request.getParameter("saveBoth") != null) mode = 2;
 			setLoginCookie(response, mode, userid, passwd);
 		}
 		return mav;
+
 	}
 
-	public void setLoginCookie(HttpServletResponse response, int mode, String userid, String pwd) {
+	public void setLoginCookie(HttpServletResponse response,  int mode, String userid, String pwd) {
 		int expiretime = 60 * 60 * 24 * 30;
 
 		logger.info("mode : " + mode);
@@ -150,10 +142,11 @@ public class LoginController {
 
 		Cookie cookie_pwd = new Cookie("pwd", pwd);
 		Cookie cookie_autologin = new Cookie("autologin", "1");
-		if (mode == 2) {
+		if(mode == 2) {
 			cookie_autologin.setMaxAge(expiretime);
 			cookie_pwd.setMaxAge(expiretime);
-		} else {
+		}
+		else {
 			cookie_autologin.setMaxAge(0);
 			cookie_pwd.setMaxAge(0);
 		}
@@ -164,6 +157,7 @@ public class LoginController {
 	public String testMD5(String str) {
 		String MD5 = "";
 		try {
+
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			md.update(str.getBytes());
 			byte byteData[] = md.digest();
@@ -173,18 +167,10 @@ public class LoginController {
 			MD5 = sb.toString();
 
 		} catch (NoSuchAlgorithmException e) {
+
 			e.printStackTrace();
 			MD5 = null;
 		}
 		return MD5;
-	}
-
-	// 테스트용 가짜 유저 데이터 생성 메서드
-	private User createTestUser() {
-		User user = new User();
-		user.setUuid("testuser");
-		user.setGname("Test Group");
-		user.setUlevel(String.valueOf(1)); // 테스트 유저의 권한 레벨 설정
-		return user;
 	}
 }
