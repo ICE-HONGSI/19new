@@ -22,10 +22,10 @@
 			</div>
 			<div class="controlBoxContentContainer pmsControlContent">
 				<button type="button"
-					style="background: url(./img/control/new_deactrun.png) no-repeat left top;"
+					style="background: url(./img/control/svg/new-deactrun.svg) no-repeat left top;"
 					onclick="openRunPopup()" id="controlRunButton"></button>
 				<button type="button"
-					style="background: url(./img/control/new_deactstop.png) no-repeat left top;"
+					style="background: url(./img/control/svg/new-deactstop.svg) no-repeat left top;"
 					onclick="openStopPopup()" id="controlStopButton"></button>
 			</div>
 		</div>
@@ -367,8 +367,8 @@
 						success.innerHTML = data;
 						setCookie("state_mode", 0);
 						closeAutoPopup();
-						document.getElementById("autoModeButton").style.backgroundImage = "url(./img/control/new_modeact.png)";
-						document.getElementById("manualModeButton").style.backgroundImage = "url(./img/control/new_modedeact.png)";
+						document.getElementById("autoModeButton").style.backgroundImage = "url(./img/control/svg/new-modeact.svg)";
+						document.getElementById("manualModeButton").style.backgroundImage = "url(./img/control/svg/new-modedeact.svg)";
 						document.getElementById("manualModeButton").style.color = "white";
 						document.getElementById("autoModeButton").style.color = "black";
 						document.getElementById("manualModeText").style.opacity = "0.85";
@@ -388,8 +388,8 @@
 						success.innerHTML = data;
 						setCookie("state_mode", 1);
 						closeManualPopup();
-						document.getElementById("manualModeButton").style.backgroundImage = "url(./img/control/new_modeact.png)";
-						document.getElementById("autoModeButton").style.backgroundImage = "url(./img/control/new_modedeact.png)";
+						document.getElementById("manualModeButton").style.backgroundImage = "url(./img/control/svg/new-modeact.svg)";
+						document.getElementById("autoModeButton").style.backgroundImage = "url(./img/control/svg/new-modedeact.svg)";
 						document.getElementById("manualModeButton").style.color = "black";
 						document.getElementById("autoModeButton").style.color = "white";
 						document.getElementById("manualModeText").style.opacity = "0.6";
@@ -408,7 +408,7 @@
 			method="GET" action="/pms/reportUpdate">
 			<div>
 				<div class="popupImg">
-					<img src="./img/control/run_icon.png"></img>
+					<img src="./img/controls/svg/run-icon.svg"></img>
 				</div>
 				<div class="popupFont">
 					<p id='popupMessage1'>PMS 가동을 시작하시겠습니까?</p>
@@ -418,7 +418,7 @@
 
 			<div class=popupButton>
 				<input class="runSubmit"
-					style="margin-right: 10px; background-image: url(./img/control/cancel.png)"
+					style="margin-right: 10px; background-image: url(./img/control/svg/cancel.svg)"
 					onclick="closeRunPopup()" type="button" value=""> <input
 					class="runSubmit" id="btn" type="button" onclick="runMode(event)"
 					value="">
@@ -434,7 +434,7 @@
 			method="GET" action="/pms/reportUpdate">
 			<div>
 				<div class="popupImg">
-					<img src="./img/control/stop_icon.png"></img>
+					<img src="./img/control/svg/stop-icon.svg"></img>
 				</div>
 				<div class="popupFont">
 					<p id='popupMessage1'>PMS 가동을 멈추시겠습니까?</p>
@@ -444,7 +444,7 @@
 
 			<div class=popupButton>
 				<input class="runSubmit"
-					style="margin-right: 10px; background-image: url(./img/control/cancel.png)"
+					style="margin-right: 10px; background-image: url(./img/control/svg/cancel.svg)"
 					onclick="closeStopPopup()" type="button" value=""> <input
 					class="runSubmit" id="btn" type="button" onclick="stopMode(event)"
 					value="">
@@ -460,7 +460,7 @@
 			method="GET" action="/pms/reportUpdate">
 			<div>
 				<div class="popupImg">
-					<img src="./img/control/stop_icon.png"></img>
+					<img src="./img/control/svg/stop-icon.svg"></img>
 				</div>
 				<div class="popupFont">
 					<p id='popupMessage1'>자동 모드로 전환하시겠습니까?</p>
@@ -469,7 +469,7 @@
 
 			<div class=popupButton>
 				<input class="runSubmit"
-					style="margin-right: 10px; background-image: url(./img/control/cancel.png)"
+					style="margin-right: 10px; background-image: url(./img/control/svg/cancel.svg)"
 					onclick="closeAutoPopup()" type="button" value=""> <input
 					class="runSubmit" id="btn" type="button" onclick="autoMode(event)"
 					value="">
@@ -485,7 +485,7 @@
 			method="GET" action="/pms/reportUpdate">
 			<div>
 				<div class="popupImg">
-					<img src="./img/control/stop_icon.png"></img>
+					<img src="./img/control/svg/stop-icon.svg"></img>
 				</div>
 				<div class="popupFont">
 					<p id='popupMessage1'>수동 모드로 전환하시겠습니까?</p>
@@ -494,9 +494,9 @@
 
 			<div class=popupButton>
 				<input class="runSubmit"
-					style="margin-right: 10px; background-image: url(./img/control/cancel.png)"
+					style="margin-right: 10px; background-image: url(./img/control/svg/cancel.svg)"
 					onclick="closeManualPopup()" type="button" value=""> <input
-					class="runSubmit" id="btn" type="button"
+					class="runSubmit" id="btn"cs type="button"
 					onclick="manualMode(event)" value="">
 			</div>
 

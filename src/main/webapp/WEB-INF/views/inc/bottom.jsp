@@ -4,7 +4,7 @@
 <div class="bottomWrapper">
 	<div class="bottomLeft">
 		<div class="bottom_logo">
-			<img class="bottomLeft" src="./img/top/ubnetsys.png" alt="(주)유비넷시스" />
+			<img class="bottomLeft" src="./img/top/svg/ubnetsys.svg" alt="(주)유비넷시스" />
 		</div>
 		<div class="bottom_logo_name">
 			<span>(주)유비넷시스</span>

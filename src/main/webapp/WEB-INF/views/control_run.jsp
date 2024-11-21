@@ -12,10 +12,10 @@
 		</div>
 		<div class="controlBoxContentContainer pmsControlContent">
 			<button type="button"
-				style="background: url(./img/control/new_run2.png) no-repeat left top;"
+				style="background: url(./img/control/svg/new-run2.svg) no-repeat left top;"
 				onclick="openRunPopup()" id="controlRunButton"></button>
 			<button type="button"
-				style="background: url(./img/control/new_deactstop.png) no-repeat left top;"
+				style="background: url(./img/control/svg/new-deactstop.svg) no-repeat left top;"
 				onclick="openStopPopup()" id="controlStopButton"></button>
 		</div>
 	</div>

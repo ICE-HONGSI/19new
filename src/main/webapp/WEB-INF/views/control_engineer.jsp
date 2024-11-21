@@ -5,7 +5,7 @@
 <div class="controlDetailSmallInfoBox controlDetailSmallInfoBoxEngineer">
 	<div class="controlBoxTitleContainer">
 		<p class="controlBoxTitle">충전모드</p>
-		<img class="refreshButton" src="./img/control/refresh.png" alt="">
+		<img class="refreshButton" src="./img/control/svg/refresh.svg" alt="">
 	</div>
 	<div class="controlBoxContentContainer">
 		<div class="controlDetailSmallInfoBoxContent">
@@ -43,7 +43,7 @@
 <div class="controlDetailSmallInfoBox controlDetailSmallInfoBoxEngineer">
 	<div class="controlBoxTitleContainer">
 		<p class="controlBoxTitle">방전모드</p>
-		<img class="refreshButton" src="./img/control/refresh.png" alt="">
+		<img class="refreshButton" src="./img/control/svg/refresh.svg" alt="">
 	</div>
 	<div class="controlBoxContentContainer">
 		<div class="controlDetailSmallInfoBoxContent">

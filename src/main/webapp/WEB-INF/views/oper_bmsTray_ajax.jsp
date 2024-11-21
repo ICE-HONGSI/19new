@@ -233,7 +233,7 @@ svg {
 			</center>
 		</div>
 		<a class="closeDetailInfo" onclick="closeTray()" href="#"><img
-			src="./img/oper/bms/closeModal.png" />
+			src="./img/oper/svg/bms/closemodal.svg" />
 		</a>
 	</div>
 </div>

@@ -275,7 +275,7 @@
          style="margin-inline-start: 1em; margin-block-start: 3em; margin: 0, auto; width: 600px"
          method="GET" action="/pms/reportUpdate">
          <a class="closeDetailInfo" onclick="closePopup()" href="#"><img
-            src="./img/report/closeModal.png" /></a>
+            src="./img/report/svg/closemodal.svg" /></a>
          <div class="profitDiv">
             <span class="popupInput" style="margin-right: 50px;">SMP</span><input
                style="color: #ffffff; opacity: 1" class="popuptext" type="text"
@@ -300,7 +300,7 @@
          </div>
          <div class="profitDiv" style="float: right; margin-top: -10">
             <input class="popupSubmit"
-               style="background-color: rgb(50, 50, 50); background-image: url(./img/report/cancel2.png)"
+               style="background-color: rgb(50, 50, 50); background-image: url(./img/report/svg/cancel2.svg)"
                onclick="closePopup()" type="button" value=""> <input
                class="popupSubmit" id="btn" type="submit" value="">
          </div>

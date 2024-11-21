@@ -66,15 +66,15 @@
 						<c:choose>
 							<c:when test="${row.BMS_Alarm ==0 }">
 								<td id="alarm"><img class="alarmImg"
-									src="./img/oper/bms/alarm_act.png" /></td>
+									src="./img/oper/svg/bms/alarm-act.svg" /></td>
 							</c:when>
 							<c:when test="${row.BMS_Alarm ==1 }">
 								<td id="alarm"><img class="alarmImg"
-									src="./img/oper/bms/alarm_redact.png" /></td>
+									src="./img/oper/svg/bms/alarm-redact.svg" /></td>
 							</c:when>
 							<c:otherwise>
 								<td id="alarm"><img class="alarmImg"
-									src="./img/oper/bms/orange.png" /></td>
+									src="./img/oper/svg/bms/orange.svg" /></td>
 							</c:otherwise>
 						</c:choose>
 						<c:choose>
@@ -89,11 +89,11 @@
 							</c:otherwise>
 						</c:choose>
 						<td id="dinfo">
-							<button style="background: url(./img/oper/bms/new_detail.png) no-repeat left top; background-size: 100% auto;" class="click">
+							<button style="background: url(./img/oper/svg/bms/new-detail.svg) no-repeat left top; background-size: 100% auto;" class="click">
 							</button>
 						</td>
 						<td id="trayinfo">
-							<button style="background: url(./img/oper/bms/new_detail.png) no-repeat left top; background-size: 100% auto;" 
+							<button style="background: url(./img/oper/svg/bms/new-detail.svg) no-repeat left top; background-size: 100% auto;"
 							  onclick="openTray(${row.Rno},'${row.DT}')" class="clickTray">
 							 </button>
 						</td>
@@ -239,7 +239,7 @@
 			</table>
 		</div>
 		<a class="closeDetailInfo" onclick="closeDetail()" href="#"><img
-			src="./img/oper/bms/closeModal.png" /></a>
+			src="./img/oper/svg/bms/closemodal.svg" /></a>
 	</div>
 </div>
 
@@ -373,22 +373,22 @@
 		if (Status == "0") return alarm_diact(); else return alarm_redact();
 	}
 
-	var BmsImgSrc = "./img/oper/bms/"
+	var BmsImgSrc = "./img/oper/svg/bms/"
 	
 	function dec2bin(dec) {//2bit로 변환하는 함수
 		return (dec >>> 0).toString(2);
 	}
 	function alarm_act(){
-		return BmsImgSrc + "alarm_act.png"
+		return BmsImgSrc + "alarm-act.svg"
 	}
 	function alarm_diact(){
-		return BmsImgSrc + "alarm_diact.png"
+		return BmsImgSrc + "alarm-diact.svg"
 	}
 	function alarm_redact(){
-		return BmsImgSrc + "alarm_redact.png"
+		return BmsImgSrc + "alarm-redact.svg"
 	}
 	function alarm_orange(){
-		return BmsImgSrc + "orange.png"
+		return BmsImgSrc + "orange.svg"
 	}
 
 	$(".click").click(

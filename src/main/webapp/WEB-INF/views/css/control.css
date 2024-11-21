@@ -25,7 +25,7 @@ select::-ms-expand {
 	left: 50%;
 	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
 	border-radius: 3px;
-	background: url(../img/control/popup_background.png) no-repeat left top;
+	background: url(../img/control/svg/popup-background.svg) no-repeat left top;
 	background-size: 100% 100%;
 	color: #ffffff;
 	font-size: 18px;
@@ -61,7 +61,7 @@ select::-ms-expand {
 	height: 31px;
 	border-radius: 5px;
 	margin-top: 30px;
-	background-image: url(../img/control/accept.png);
+	background-image: url(../img/control/svg/accept.svg);
 	background-size: 100% 41px;
 	border: none;
 	cursor: pointer;
@@ -98,7 +98,7 @@ select::-ms-expand {
 	width: 360px;
 	height: 400px;
 	margin: 0 auto 0 0;
-	background: url(../img/control/smallInfoBoxBackground.png) no-repeat
+	background: url(../img/control/svg/smallinfoboxbackground.svg) no-repeat
 		left top;
 	background-size: 100% 100%;
 	display: flex;
@@ -109,7 +109,7 @@ select::-ms-expand {
 	width: 359px;
 	height: 400px;
 	float: left;
-	background: url(../img/control/menu-box-background.png) no-repeat left
+	background: url(../img/control/svg/menu-box-background.svg) no-repeat left
 		top;
 	background-size: 100% 100%;
 	display: flex;
@@ -120,7 +120,7 @@ select::-ms-expand {
 	width: 374px;
 	height: 400px;
 	float: left;
-	background: url(../img/control/option-box-background.png) no-repeat left
+	background: url(../img/control/svg/option-box-background.svg) no-repeat left
 		top;
 	background-size: 100% 100%;
 }
@@ -129,7 +129,7 @@ select::-ms-expand {
 	width: 1096px;
 	height: 400px;
 	float: left;
-	background: url(../img/control/control-box-background.png) no-repeat
+	background: url(../img/control/svg/control-box-background.svg) no-repeat
 		left top;
 	background-size: 100% 100%;
 }
@@ -259,7 +259,7 @@ select::-ms-expand {
 }
 
 .controlContentFloatRight span {
-	background: url(../img/main/run-info/data-background.png) no-repeat left
+	background: url(../img/main/svg/run-info/data-background.svg) no-repeat left
 		top;
 	background-size: 100% 100%;
 	text-align: center;
@@ -271,7 +271,7 @@ select::-ms-expand {
 	padding: 0 35px;
 	color: #000000;
 	display: inline-block;
-	background: url(../img/control/new_greenstatus.png);
+	background: url(../img/control/svg/new-greenstatus.svg);
 	background-size: 100% 100%;
 	font-weight: 500;
 }
@@ -280,7 +280,7 @@ select::-ms-expand {
 	padding: 0 35px;
 	color: #000000;
 	display: inline-block;
-	background: url(../img/control/new_redstatus.png);
+	background: url(../img/control/svg/new-redstatus.svg);
 	background-size: 100% 100%;
 	font-weight: 500;
 }
@@ -325,7 +325,7 @@ select::-ms-expand {
 	width: 300px;
 	height: 40px;
 	margin: 0 auto;
-	background: url(../img/control/PCS-select.png);
+	background: url(../img/control/svg/new-pcs.svg);
 	background-size: 100% 100%;
 	text-align: center;
 	line-height: 40px;
@@ -346,7 +346,7 @@ select::-ms-expand {
 .modeButtonSelected {
 	width: 300px;
 	height: 40px;
-	background: url(../img/control/new_modeact.png);
+	background: url(../img/control/svg/new-modeact.svg);
 	background-color: #dfa81a;
 	border-radius: 10px;
 	text-align: center;
@@ -360,7 +360,7 @@ select::-ms-expand {
 	width: 300px;
 	height: 40px;
 	margin: 5px auto;
-	background: url(../img/control/new_modedeact.png);
+	background: url(../img/control/svg/new-modedeact.svg);
 	border-radius: 10px;
 	text-align: center;
 	line-height: 40px;
@@ -371,7 +371,7 @@ select::-ms-expand {
 
 #resetButton {
 	margin: 30px auto;
-	background: url(../img/control/new_reset2.png);
+	background: url(../img/control/svg/new-reset2.svg);
 	text-align: center;
 	line-height: 40px;
 	color: rgb(125, 220, 180);
@@ -435,7 +435,7 @@ select::-ms-expand {
 	line-height: 40px;
 	width: 250px;
 	height: 40px;
-	background: url(../img/control/control-charging.png);
+	background: url(../img/control/svg/control-charging.svg);
 	background-size: 100% 100%;
 }
 
@@ -448,7 +448,7 @@ select::-ms-expand {
 	line-height: 40px;
 	width: 250px;
 	height: 40px;
-	background: url(../img/control/output-mode.png);
+	background: url(../img/control/svg/output-mode.svg);
 	background-size: 100% 100%;
 }
 
@@ -459,7 +459,7 @@ select::-ms-expand {
 	line-height: 40px;
 	width: 250px;
 	height: 40px;
-	background: url(../img/control/discharging.png);
+	background: url(../img/control/svg/discharging.svg);
 	background-size: 100% 100%;
 }
 
@@ -470,7 +470,7 @@ select::-ms-expand {
 	line-height: 40px;
 	width: 250px;
 	height: 40px;
-	background: url(../img/control/stop.png);
+	background: url(../img/control/svg/stop.svg);
 	background-size: 100% 100%;
 }
 
@@ -480,7 +480,7 @@ select::-ms-expand {
 }
 
 .applyButtonEngineer {
-	background: url(../img/control/apply.png);
+	background: url(../img/control/svg/apply.svg);
 	background-size: 100% 100%;
 	width: 140px;
 	height: 33px;
@@ -494,7 +494,7 @@ select::-ms-expand {
 }
 
 .applyButtonOperationSetting1 {
-	background: url(../img/control/apply.png);
+	background: url(../img/control/svg/apply.svg);
 	background-size: 100% 100%;
 	width: 140px;
 	height: 33px;
@@ -508,7 +508,7 @@ select::-ms-expand {
 }
 
 .applyButtonOperationSetting2 {
-	background: url(../img/control/apply.png);
+	background: url(../img/control/svg/apply.svg);
 	background-size: 100% 100%;
 	width: 140px;
 	height: 33px;

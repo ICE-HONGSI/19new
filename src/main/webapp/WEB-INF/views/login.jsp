@@ -32,7 +32,7 @@
 		</c:when>
 		<c:otherwise>
 			<div class="loginContent">
-				<img src="./img/login/logo.png" alt="logo" id="loginLogo" />
+				<img src="./img/login/logo.svg" alt="logo" id="loginLogo" />
 				<form name="form1" method="post" action="loginProcess">
 					<input type="text" style="background-color: blue !important;"
 						name="Uuid" id="Uuid" placeholder="id" class="loginText"

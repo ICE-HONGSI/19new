@@ -29,7 +29,7 @@ body {
 
 .loginContent {
 	border-radius: 30px;
-	background: url(../img/login/background.png) no-repeat left top;
+	background: url(../img/login/svg/background.svg) no-repeat left top;
 	background-size: 100% 100%;
 	width: 700px;
 	height: 400px;
@@ -45,7 +45,7 @@ body {
 }
 
 .loginText {
-	background: url(../img/login/input-background.png) no-repeat left top;
+	background: url(../img/login/svg/input-background.svg) no-repeat left top;
 	background-size: 100% 100%;
 	width: 330px;
 	height: 36px;
@@ -76,7 +76,7 @@ body {
 	width: 115px;
 	height: 35px;
 	border: none;
-	background: url(../img/login/loginbutton.png) no-repeat left top;
+	background: url(../img/login/svg/loginbutton.svg) no-repeat left top;
 	background-size: 100% 100%;
 	font-size: 20px;
 	font-weight: bold;

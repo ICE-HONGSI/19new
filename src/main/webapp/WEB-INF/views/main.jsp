@@ -28,7 +28,7 @@
 			</div>
 			<div class="solar-info-content-container">
 				<img class="solar-info-img-container"
-					src="./img/main/solar-info/solar-panel-1-c.png" alt="Solar Panel" />
+					src="./img/main/svg/solar-info/solar-panel-1-c.svg" alt="Solar Panel" />
 				<div class="solar-info-content-detail-conatiner">
 					<p class="solar-info-subtitle">현재 발전량</p>
 					<p>
@@ -45,7 +45,7 @@
 			</div>
 			<div class="ess-info-content-container">
 				<img class="ess-info-img-container"
-					src="./img/main/ess-info/battery-1-c.png" id="ess-info-battery"
+					src="./img/main/svg/ess-info/battery-1-c.svg" id="ess-info-battery"
 					alt="Battery" />
 				<div class="ess-info-content-detail-conatiner">
 					<p class="ess-info-subtitle">현재 배터리 SOC</p>
@@ -115,7 +115,7 @@
 				<div class="power-system-content-container">
 					<div class="power-system-content-row">
 						<div class="power-system-image-name-container" id="kepco">
-							<img src="./img/main/power-system/kepco.png" alt="">
+							<img src="./img/main/svg/power-system/kepco.svg" alt="">
 							<div class="power-system-name-tag">한전</div>
 						</div>
 						<div id="line1-value">
@@ -124,7 +124,7 @@
 							</p>
 						</div>
 						<div class="power-system-image-name-container" id="solar-panel">
-							<img src="./img/main/power-system/solar-panel.png" alt="">
+							<img src="./img/main/svg/power-system/solar-panel.svg" alt="">
 							<div class="power-system-name-tag">태양광</div>
 						</div>
 						<div id="line2-value">
@@ -140,7 +140,7 @@
 						<!-- 정렬을 위한 빈 div 1개 -->
 						<div class="power-system-image-name-container"></div>
 						<div class="power-system-image-name-container" id="battery">
-							<img src="./img/main/power-system/battery.png"
+							<img src="./img/main/svg/power-system/battery.svg"
 								id="power-system-battery" alt="">
 							<div class="ess-info-number">
 								<div class="power-system-name-tag">배터리</div>
@@ -163,7 +163,7 @@
 							</p>
 						</div>
 						<div class="power-system-image-name-container" id="PCS">
-							<img src="./img/main/power-system/PCS.png" alt="">
+							<img src="./img/main/svg/power-system/pcs.svg" alt="">
 							<!-- <div id="line5-value"> -->
 							<p class="line-value">
 								<span id="FigureC">0</span><span class="unit">&nbspkW</span>
@@ -174,11 +174,11 @@
 
 						<div class="power-system-image-name-container"></div>
 					</div>
-					<img src="./img/main/power-system/de_line1.png" id="line1" alt="">
-					<img src="./img/main/power-system/de_line2.png" id="line2" alt="">
-					<img src="./img/main/power-system/de_line3.png" id="line3" alt="">
-					<img src="./img/main/power-system/de_line4.png" id="line4" alt="">
-					<img src="./img/main/power-system/de_line5.png" id="line5" alt="">
+					<img src="./img/main/svg/power-system/de-line1.svg" id="line1" alt="">
+					<img src="./img/main/svg/power-system/de-line2.svg" id="line2" alt="">
+					<img src="./img/main/svg/power-system/de-line3.svg" id="line3" alt="">
+					<img src="./img/main/svg/power-system/de-line4.svg" id="line4" alt="">
+					<img src="./img/main/svg/power-system/de-line5.svg" id="line5" alt="">
 				</div>
 			</div>
 
@@ -251,7 +251,7 @@
 <script>
 	//-----------------------------------------------------------메인 상태표기 & 애니메이션
 	//------------------------------------단위 처리
-	var MainImgSrc = "./img/main/power-system/";
+	var MainImgSrc = "./img/main/svg/power-system/";
 
 	function check_unit(A, B, id, id2) {
 		if (parseInt(A - B) > 1000) {
@@ -284,15 +284,15 @@
 
 		/* <!-- Button image Change as BMS_Status--> */
 		var runInfoSecImgStyle = document.getElementById("run-info-SecondImg").style;
-		var runInfoImgUrl = "url('./img/main/run-info/"
+		var runInfoImgUrl = "url('./img/main/svg/run-info/"
 
 		if (BMS_Status == "대기중") {
-			runInfoImgUrl += "waiting.png')";
+			runInfoImgUrl += "waiting.svg')";
 			runInfoSecImgStyle.color = "white";
 		} else if (BMS_Status == "방전중")
-			runInfoImgUrl += "discharge.png')";
+			runInfoImgUrl += "discharge.svg')";
 		else
-			runInfoImgUrl += "charging.png')";
+			runInfoImgUrl += "charging.svg')";
 
 		runInfoSecImgStyle.bacgroundImage = runInfoImgUrl;
 
@@ -323,16 +323,16 @@
 			var A = parseFloat(R_PVOut) - parseFloat(R_PCSPower);
 			var B = parseFloat(R_PCSPower);
 
-			A > 0 ? line1.src += "1.gif" : line1.src += "de_line1.png"; //animation A
+			A > 0 ? line1.src += "1.gif" : line1.src += "de-line1.svg"; //animation A
 
 			B > 0 ? line2.src += "2.gif" // animation B
-			: line2.src += "de_line2.png";
+			: line2.src += "de-line2.svg";
 
 			D > 0 ? line3.src += "3.gif" // animation C
-			: line3.src += "de_line3.png";
+			: line3.src += "de-line3.svg";
 
-			line4.src += "de_line4.png"; // off D
-			line5.src += "de_line5.png"; // off E
+			line4.src += "de-line4.svg"; // off D
+			line5.src += "de-line5.svg"; // off E
 
 			break;
 
@@ -341,13 +341,13 @@
 			var B = 0;
 
 			A > 0 ? line1.src += "1.gif" //animation A
-			: line1.src += "de_line1.png";
+			: line1.src += "de-line1.svg";
 
 			if (C > 0) {
 				line4.src += "4.gif"; // F off
 				line4.style.top = "225px";
 			} else {
-				line4.src += "de_line4.png";
+				line4.src += "de-line4.svg";
 			}
 
 			if (E > 0) {
@@ -355,11 +355,11 @@
 				line5.style.left = "583px";
 				line5.style.top = "227px";
 			} else {
-				line5.src += "de_line5.png";
+				line5.src += "de-line5.svg";
 			}
 
-			line2.src += "de_line2.png"; // B off
-			line3.src += "de_line3.png"; // D off
+			line2.src += "de-line2.svg"; // B off
+			line3.src += "de-line3.svg"; // D off
 
 			break;
 
@@ -368,12 +368,12 @@
 			var B = parseFloat(R_PCSPower);
 
 			A > 0 ? line1.src += "1.gif" //animation A
-			: line1.src += "de_line1.png";
+			: line1.src += "de-line1.svg";
 
-			line2.src += "de_line2.png"; // B off
-			line3.src += "de_line3.png"; // D off
-			line5.src += "de_line5.png"; // E off
-			line4.src += "de_line4.png"; // F off
+			line2.src += "de-line2.svg"; // B off
+			line3.src += "de-line3.svg"; // D off
+			line5.src += "de-line5.svg"; // E off
+			line4.src += "de-line4.svg"; // F off
 
 			break;
 
@@ -392,17 +392,17 @@
 		var temp = Number(R_SOC);
 
 		if (0 <= temp && temp <= 5)
-			img.src += "battery1.png";
+			img.src += "battery1.svg";
 		else if (6 <= temp && temp <= 30)
-			img.src += "battery2.png";
+			img.src += "battery2.svg";
 		else if (31 <= temp && temp <= 50)
-			img.src += "battery3.png";
+			img.src += "battery3.svg";
 		else if (51 <= temp && temp <= 75)
-			img.src += "battery4.png";
+			img.src += "battery4.svg";
 		else if (75 <= temp && temp <= 94)
-			img.src += "battery5.png";
+			img.src += "battery5.svg";
 		else
-			img.src += "battery.png";
+			img.src += "battery.svg";
 
 		img.style.width = "120px";
 		img.style.height = "auto";
@@ -415,17 +415,17 @@
 	img.src = MainImgSrc;
 
 	if (0 <= temp && temp <= 5)
-		img.src += "battery1.png";
+		img.src += "battery1.svg";
 	else if (6 <= temp && temp <= 30)
-		img.src += "battery2.png";
+		img.src += "battery2.svg";
 	else if (31 <= temp && temp <= 50)
-		img.src += "battery3.png";
+		img.src += "battery3.svg";
 	else if (51 <= temp && temp <= 75)
-		img.src += "battery4.png";
+		img.src += "battery4.svg";
 	else if (75 <= temp && temp <= 94)
-		img.src += "battery5.png";
+		img.src += "battery5.svg";
 	else
-		img.src += "battery.png";
+		img.src += "battery.svg";
 
 	//-----------------------------------------------------------메인 차트 부분
 

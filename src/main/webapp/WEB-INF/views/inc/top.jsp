@@ -41,7 +41,7 @@
         
         function change_weather(icon, temp) {
         	var status;
-        	img.src = "./img/top/";
+        	img.src = "./img/top/svg/";
         	
             switch (icon) {
                 /*맑음*/
@@ -49,7 +49,7 @@
                 case "01n":
                 case "03n":
                 case "03d":
-                    img.src += "clear.png";
+                    img.src += "clear.svg";
                     status = "맑음";
                     break;
 
@@ -58,14 +58,14 @@
                 case "02n":
                 case "04d":
                 case "04n":
-                    img.src += "little_cloud.png";
+                    img.src += "little_cloud.svg";
                     status = "조금흐림";
                     break;
 
                 /*구름 많이*/
                 case "50d":
                 case "50n":
-                    img.src += "cloudy.png";
+                    img.src += "cloudy.svg";
                     status = "흐림";
                     break;
 
@@ -76,14 +76,14 @@
                 case "10n":
                 case "11d":
                 case "11n":
-                    img.src += "rain.png";
+                    img.src += "rain.svg";
                     status = "비";
                     break;
 
                 /*눈*/
                 case "13d":
                 case "13n":
-                    img.src += "snow.png";
+                    img.src += "snow.svg";
                     status = "눈";
                     break;
             }
@@ -186,7 +186,7 @@
 	<div class="topMenu">
 		<div class="logo">
 			<div class="logo_image">
-				<img src="./img/top/energuard.png" id="logo" style="cursor:pointer" onclick='locationRedir("main")'>
+				<img src="./img/top/svg/energuard.svg" id="logo" style="cursor:pointer" onclick='locationRedir("main")'>
 			</div>
 			<c:choose>
 				<c:when test="${not empty sessionScope.userLoginInfo}">

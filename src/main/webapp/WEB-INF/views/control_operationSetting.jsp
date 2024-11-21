@@ -5,7 +5,7 @@
 	class="controlDetailSmallInfoBox controlDetailSmallInfoBoxOperationSetting">
 	<div class="controlBoxTitleContainer">
 		<p class="controlBoxTitle">PMS 운전 관리</p>
-		<img class="refreshButton" src="./img/control/refresh.png" alt="">
+		<img class="refreshButton" src="./img/control/svg/refresh.svg" alt="">
 	</div>
 	<div class="controlBoxContentContainer">
 		<div class="controlDetailSmallInfoBoxContent">
@@ -51,7 +51,7 @@
 	class="controlDetailSmallInfoBox controlDetailSmallInfoBoxOperationSetting">
 	<div class="controlBoxTitleContainer">
 		<p class="controlBoxTitle">BMS 운전 관리</p>
-		<img class="refreshButton" src="./img/control/refresh.png" alt="">
+		<img class="refreshButton" src="./img/control/svg/refresh.svg" alt="">
 	</div>
 	<div class="controlBoxContentContainer">
 		<div class="controlDetailSmallInfoBoxContent">

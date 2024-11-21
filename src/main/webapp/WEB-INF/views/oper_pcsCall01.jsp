@@ -122,18 +122,18 @@
 			if (i == 9) {
 				//alert(unitId);
 				if (status == "0")
-					document.getElementById(doId).src = "./img/oper/pcs/alarm_diact.png";
+					document.getElementById(doId).src = "./img/oper/svg/pcs/alarm-diact.svg";
 				else
-					document.getElementById(doId).src = "./img/oper/pcs/alarm_redact.png";
+					document.getElementById(doId).src = "./img/oper/svg/pcs/alarm-redact.svg";
 
 				index += 1;
 
 			} else {
 				//alert(unitId);
 				if (status == "0")
-					document.getElementById(doId).src = "./img/oper/pcs/alarm_diact.png";
+					document.getElementById(doId).src = "./img/oper/svg/pcs/alarm-diact.svg";
 				else
-					document.getElementById(doId).src = "./img/oper/pcs/alarm_act.png";
+					document.getElementById(doId).src = "./img/oper/svg/pcs/alarm-act.svg";
 				index += 1;
 			}
 		}
@@ -161,17 +161,17 @@
 			if (i == 7 || i == 8 || i == 12) {
 				//alert(unitId);
 				if (status == "0")
-					document.getElementById(diId).src = "./img/oper/pcs/alarm_diact.png";
+					document.getElementById(diId).src = "./img/oper/svg/pcs/alarm-diact.svg";
 				else
-					document.getElementById(diId).src = "./img/oper/pcs/alarm_redact.png";
+					document.getElementById(diId).src = "./img/oper/svg/pcs/alarm-redact.svg";
 				index += 1;
 
 			} else {
 				//alert(unitId);
 				if (status == "0")
-					document.getElementById(diId).src = "./img/oper/pcs/alarm_diact.png";
+					document.getElementById(diId).src = "./img/oper/svg/pcs/alarm-diact.svg";
 				else
-					document.getElementById(diId).src = "./img/oper/pcs/alarm_act.png";
+					document.getElementById(diId).src = "./img/oper/svg/pcs/alarm-act.svg";
 				index += 1;
 			}
 		}
@@ -299,35 +299,35 @@
         -->
 				<tr>
 					<th class="pcs_left_title bottom_border" rowspan="2"><span>DO</span></th>
-					<td><img id="do0" src="./img/oper/pcs/alarm_act.png" /><span>DCCB_ON</span></td>
-					<td><img id="do1" src="./img/oper/pcs/alarm_diact.png" /><span>DCCB_OFF</span></td>
-					<td><img id="do2" src="./img/oper/pcs/alarm_redact.png" /><span>ACB_ON</span></td>
-					<td><img id="do3" src="./img/oper/pcs/alarm_act.png" /><span>ACCB_OFF</span></td>
-					<td><img id="do4" src="./img/oper/pcs/alarm_diact.png" /><span>AUX_Power_MC</span></td>
+					<td><img id="do0" src="./img/oper/svg/pcs/alarm-act.svg" /><span>DCCB_ON</span></td>
+					<td><img id="do1" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>DCCB_OFF</span></td>
+					<td><img id="do2" src="./img/oper/svg/pcs/alarm-redact.svg" /><span>ACB_ON</span></td>
+					<td><img id="do3" src="./img/oper/svg/pcs/alarm-act.svg" /><span>ACCB_OFF</span></td>
+					<td><img id="do4" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>AUX_Power_MC</span></td>
 				</tr>
 				<tr class="bottom_border">
-					<td><img id="do5" src="./img/oper/pcs/alarm_act.png" /><span>LAMP_POWER</span></td>
-					<td><img id="do6" src="./img/oper/pcs/alarm_diact.png" /><span>LAMP_OPERATION</span></td>
-					<td><img id="do7" src="./img/oper/pcs/alarm_redact.png" /><span>LAMP_FAULT</span></td>
-					<td><img id="do8" src="./img/oper/pcs/alarm_act.png" /><span>Discharge
+					<td><img id="do5" src="./img/oper/svg/pcs/alarm-act.svg" /><span>LAMP_POWER</span></td>
+					<td><img id="do6" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>LAMP_OPERATION</span></td>
+					<td><img id="do7" src="./img/oper/svg/pcs/alarm-redact.svg" /><span>LAMP_FAULT</span></td>
+					<td><img id="do8" src="./img/oper/svg/pcs/alarm-act.svg" /><span>Discharge
 							MC2</span></td>
-					<td><img id="do9" src="./img/oper/pcs/alarm_diact.png" /><span>FAN
+					<td><img id="do9" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>FAN
 							SMPS MC</span></td>
 				</tr>
 				<tr>
 					<th class="pcs_left_title bottom_border" rowspan="2"><span>DI</span></th>
-					<td><img id="di1" src="./img/oper/pcs/alarm_act.png" /><span>DCCB</span></td>
-					<td><img id="di2" src="./img/oper/pcs/alarm_diact.png" /><span>DI_Signal</span></td>
-					<td><img id="di3" src="./img/oper/pcs/alarm_redact.png" /><span>ACCB</span></td>
-					<td><img id="di4" src="./img/oper/pcs/alarm_act.png" /><span>DC_Fuse</span></td>
-					<td><img id="di5" src="./img/oper/pcs/alarm_diact.png" /><span>DC_SPD</span></td>
+					<td><img id="di1" src="./img/oper/svg/pcs/alarm-act.svg" /><span>DCCB</span></td>
+					<td><img id="di2" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>DI_Signal</span></td>
+					<td><img id="di3" src="./img/oper/svg/pcs/alarm-redact.svg" /><span>ACCB</span></td>
+					<td><img id="di4" src="./img/oper/svg/pcs/alarm-act.svg" /><span>DC_Fuse</span></td>
+					<td><img id="di5" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>DC_SPD</span></td>
 				</tr>
 				<tr class="bottom_border">
-					<td><img id="di6" src="./img/oper/pcs/alarm_act.png" /><span>EMERGENCY</span></td>
-					<td><img id="di7" src="./img/oper/pcs/alarm_diact.png" /><span>DOOR</span></td>
-					<td><img id="di8" src="./img/oper/pcs/alarm_redact.png" /><span>AC_SPD</span></td>
-					<td><img id="di9" src="./img/oper/pcs/alarm_act.png" /><span>AC_GFD</span></td>
-					<td><img id="di10" src="./img/oper/pcs/alarm_diact.png" /><span>Control
+					<td><img id="di6" src="./img/oper/svg/pcs/alarm-act.svg" /><span>EMERGENCY</span></td>
+					<td><img id="di7" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>DOOR</span></td>
+					<td><img id="di8" src="./img/oper/svg/pcs/alarm-redact.svg" /><span>AC_SPD</span></td>
+					<td><img id="di9" src="./img/oper/svg/pcs/alarm-act.svg" /><span>AC_GFD</span></td>
+					<td><img id="di10" src="./img/oper/svg/pcs/alarm-diact.svg" /><span>Control
 							SPD</span></td>
 				</tr>
 				

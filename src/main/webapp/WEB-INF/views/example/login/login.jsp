@@ -17,7 +17,7 @@
 		
 		
     <div class="loginContent">
-      <img src="./img/login/logo.png" alt="logo" id="loginLogo"/>
+      <img src="./img/login/svg/logo.svg" alt="logo" id="loginLogo"/>
       <form name="form1" method="post" action="loginProcess">
         <input type="text" style="background-color: blue!important;" name="Uuid" class="loginText" placeholder="ID"/><br/><br/>
         <input type="password" name="Upwd" class="loginText" placeholder="Password"/><br/><br/>

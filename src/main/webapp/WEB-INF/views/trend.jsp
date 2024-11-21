@@ -47,8 +47,8 @@
     </form>
     </div>
     <div class="define_bar">
-      <span class="trendbar" id="bar2"><img src="img/trend/bar2.png"/>태양광 발전량</span>
-      <span class="trendbar" id="bar1"><img src="img/trend/bar1.png"/>배터리 충.방전량</span>
+      <span class="trendbar" id="bar2"><img src="img/trend/svg/bar2.svg"/>태양광 발전량</span>
+      <span class="trendbar" id="bar1"><img src="img/trend/svg/bar1.svg"/>배터리 충.방전량</span>
     </div>
     <div class="trend_chart">
     <canvas id="lineCanvas"></canvas>
@@ -166,9 +166,9 @@
     </form>
     </div>
     <div class="define_bar">
-      <span class="bar_bold" id="bar5"><img src="img/trend/bar5.png"/>방전량</span>
-      <span class="bar_bold" id="bar4"><img src="img/trend/bar4.png"/>충전량</span>
-      <span class="bar_bold" id="bar3"><img src="img/trend/bar3.png"/>태양광 발전량</span>
+      <span class="bar_bold" id="bar5"><img src="img/trend/svg/bar5.svg"/>방전량</span>
+      <span class="bar_bold" id="bar4"><img src="img/trend/svg/bar4.svg"/>충전량</span>
+      <span class="bar_bold" id="bar3"><img src="img/trend/svg/bar3.svg"/>태양광 발전량</span>
     </div>
     <div class="trend_chart">
       <canvas id="barCanvas" width="384" height="210"></canvas>

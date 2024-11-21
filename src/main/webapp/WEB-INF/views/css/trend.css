@@ -27,7 +27,7 @@
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;
-	background: url(../img/trend/date_day.png) no-repeat left top;
+	background: url(../img/trend/svg/date-day.svg) no-repeat left top;
 	width: 183px;
 	height: 35px;
 	line-height: 40px;
@@ -112,7 +112,7 @@ select::-ms-expand {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;
-	background: url(../img/trend/date_year.png) no-repeat left top;
+	background: url(../img/trend/svg/date-year.svg) no-repeat left top;
 	width: 125px;
 	height: 35px;
 	line-height: 40px;
@@ -131,7 +131,7 @@ select::-ms-expand {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;
-	background: url(../img/trend/date_month.png) no-repeat left top;
+	background: url(../img/trend/svg/date-month.svg) no-repeat left top;
 	width: 88px;
 	height: 35px;
 	line-height: 40px;
@@ -162,12 +162,12 @@ select::-ms-expand {
 }
 
 #tsOne {
-	background: url(../img/trend/board.png) no-repeat left top;
+	background: url(../img/trend/svg/board.svg) no-repeat left top;
 	background-size: 100% 100%;
 }
 
 #tsTwo {
-	background: url(../img/trend/board.png) no-repeat left top;
+	background: url(../img/trend/svg/board.svg) no-repeat left top;
 	background-size: 100% 100%;
 }
 
@@ -181,7 +181,7 @@ select::-ms-expand {
 }
 
 input.form_btn {
-	background: url(../img/trend/button.png) no-repeat;
+	background: url(../img/trend/svg/button.svg) no-repeat;
 	background-size: 100% 100%;
 	border-radius: 5px;
 	border: none;

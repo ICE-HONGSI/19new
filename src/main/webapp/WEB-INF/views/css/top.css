@@ -229,7 +229,7 @@ body {
 	margin-top: 30px;
 	width: 130px;
 	border: none;
-	background: url(../img/top/new_logout.png) no-repeat left top;
+	background: url(../img/top/svg/new-logout.svg) no-repeat left top;
 	background-size: 100% 140%;
 	cursor: pointer;
 	border-radius: 10px;

@@ -66,14 +66,14 @@
 	function toggleButton() {
 		if (toggle == 0) {
 			mode = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp효율 모드";
-			img = "url('./img/control/output-mode2.png')";
+			img = "url('./img/control/svg/output-mode2.svg')";
 			color = "white";
 			toggle++;
 		}
 
 		else {
 			mode = "충전 모드";
-			img = "url('./img/control/output-mode.png')";
+			img = "url('./img/control/svg/output-mode.svg')";
 			color = "black";
 			toggle--;
 		}
