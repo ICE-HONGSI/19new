@@ -6,7 +6,7 @@
 			SELECT
 			    *
 			FROM
-			    tbl_pcs_lsis
+			    tbl_pcs
 			WHERE
 				Gno=${g_number} AND Pno=${p_number} ORDER BY DT DESC limit 1;
 		]]>
@@ -17,7 +17,7 @@
 				SELECT
 				    DISTINCT Pno
 				FROM
-				    tbl_pcs_lsis
+				    tbl_pcs
 				WHERE
 					Gno=${g_number} ORDER BY Pno ASC;
 			]]>

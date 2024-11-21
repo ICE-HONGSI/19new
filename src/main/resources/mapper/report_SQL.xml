@@ -1,50 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="reportSql">	
+<mapper namespace="reportSql">
 
+	<!-- 특정 날짜의 로그 데이터 조회 -->
 	<select id="reportDate" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
-			SELECT 
-				ESS_SumOut,
-				ESS_SumRcv,
-				PV_Total,
-				DT
-			FROM
-				tbl_log
-			WHERE
-				Gno=${g_number} AND MONTH(DT)=${month} AND YEAR(DT)=${year} ORDER BY DT;
+		SELECT
+			ESS_SumOut,
+			ESS_SumRcv,
+			PV_Total,
+			DT
+		FROM
+			tbl_log
+		WHERE
+			Gno = #{g_number}
+		  AND DT BETWEEN #{start_date} AND #{end_date}
+		ORDER BY
+			DT ASC;
 		]]>
 	</select>
 
+	<!-- 그룹별 재정 데이터 조회 -->
 	<select id="getMoneyData" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
-			SELECT
-				SMP,
-				REC,
-				PV_Multiple,
-				ESS_Multiple
-			FROM
-				tbl_group
-			WHERE
-				Gno=${g_number};
+		SELECT
+			SMP,
+			REC,
+			PV_Multiple,
+			ESS_Multiple
+		FROM
+			tbl_group
+		WHERE
+			Gno = #{g_number};
 		]]>
 	</select>
 
+	<!-- 그룹 데이터 업데이트 -->
 	<update id="updateData" parameterType="hashmap">
 		<![CDATA[
-			Update
-				tbl_group
-			set
-				SMP=#{smp},
-				REC=#{rec},
-				PV_Multiple=#{pv_multi},
-				ESS_Multiple=#{ess_multi}
-			WHERE
-				Gno=#{gno};
+		UPDATE
+			tbl_group
+		SET
+			SMP = #{smp},
+			REC = #{rec},
+			PV_Multiple = #{pv_multi},
+			ESS_Multiple = #{ess_multi}
+		WHERE
+			Gno = #{gno};
 		]]>
 	</update>
-	
-	
-	
+
 </mapper>
