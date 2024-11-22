@@ -24,8 +24,8 @@
 					<input class="rightButton" type="button" onclick="excelEvent();"
 						style="background: url('./img/oper/svg/eventlist/new-excel.svg'); width: 133px; border-radius: 10px;" />
 					<input class="rightButton" type="button" name="Submit" alt="Submit"
-						onclick="searchEvent(event);"
-						style="background: url('./img/oper/svg/eventlist/new-excel.svg'); width: 103px; border-radius: 10px;" />
+						   onclick="searchEvent(event);"
+						   style="background: url('./img/oper/svg/eventlist/new-search.svg'); width: 103px; border-radius: 10px;" />
 				</div>
 			</form>
 		</div>
