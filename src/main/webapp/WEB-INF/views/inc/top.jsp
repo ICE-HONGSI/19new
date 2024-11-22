@@ -58,7 +58,7 @@
                 case "02n":
                 case "04d":
                 case "04n":
-                    img.src += "little_cloud.svg";
+                    img.src += "little-cloud.svg";
                     status = "조금흐림";
                     break;
 
